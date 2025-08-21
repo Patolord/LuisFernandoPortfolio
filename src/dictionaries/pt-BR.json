@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "expertise": "Especialidades",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Engenharia Aeronáutica",
+    "subtitle": "Consultor",
+    "description": "Engenheiro aeronáutico experiente com mais de 18 anos em manutenção de aeronaves comerciais, projetos de redelivery e consultoria técnica para grandes companhias aéreas e empresas de leasing.",
+    "yearsExperience": "18+ Anos de Experiência",
+    "location": "São José dos Campos, SP",
+    "multiPlatform": "Especialista Multi-Plataforma",
+    "viewExperience": "Ver Experiência"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description1": "Com mais de 18 anos de experiência especializada em manutenção de aeronaves comerciais e consultoria técnica, me estabeleci como um especialista confiável em projetos de redelivery de aeronaves, documentação de aeronavegabilidade e transições de frota em múltiplas plataformas de aeronaves.",
+    "description2": "Minha expertise abrange os principais fabricantes de aeronaves incluindo Airbus, Boeing, Embraer, ATR e Fokker, com vasta experiência em inspeções de lessors, auditorias de registros e revisões de condição física para companhias aéreas e empresas de leasing em todo o mundo.",
+    "stats": {
+      "yearsExperience": "Anos de Experiência",
+      "aircraftProjects": "Projetos de Aeronaves",
+      "aircraftTypes": "Tipos de Aeronaves",
+      "majorAirlines": "Grandes Companhias Aéreas"
+    }
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "jobs": {
+      "deliveryAuditor": {
+        "title": "Auditor de Documentos de Entrega",
+        "company": "Eirtech / JetBlue",
+        "period": "Mar 2023 - Mar 2025",
+        "description": "Realizou auditorias abrangentes de registros incluindo ADs, SBs e documentação de APU em várias aeronaves Embraer 195 para aceitação de entrega."
+      },
+      "lessorRep": {
+        "title": "Representante do Lessor",
+        "company": "SkyOn / Azul",
+        "period": "Nov 2023 - Fev 2024",
+        "description": "Liderou inspeção abrangente de redelivery e auditoria de registros de aeronave EMB 195, garantindo conformidade com requisitos do lessor e padrões de aeronavegabilidade."
+      },
+      "systemsEngineer": {
+        "title": "Engenheiro de Sistemas",
+        "company": "TAM Airlines",
+        "period": "Ago 2008 - Abr 2014",
+        "description": "Gerenciou MEL e programas de manutenção para múltiplos tipos de aeronaves, serviu como liaison técnico com OEMs, tratou aprovações de materiais PMA e integrou com sucesso o ATR-42 nas operações da frota TAM."
+      },
+      "engineer": {
+        "title": "Engenheiro",
+        "company": "Avianca Brazil",
+        "period": "Abr 2014 - Jun 2019",
+        "description": "Planejou e executou manutenção pesada e verificações de redelivery para frotas A320/A330. Supervisionou redelivery de aeronaves e motores para grandes lessors incluindo GECAS, JSA, MCAP, McLarens e ACG."
+      }
+    }
+  },
+  "expertise": {
+    "title": "Especialidade Técnica",
+    "aircraftPlatforms": "Plataformas de Aeronaves",
+    "engineExperience": "Experiência com Motores",
+    "coreSpecializations": "Especializações Principais",
+    "specializations": {
+      "redelivery": {
+        "title": "Redelivery e Leasing",
+        "description": "Inspeções de lessor, auditorias de registros, OCCM/HT, conformidade AD/SB"
+      },
+      "certifications": {
+        "title": "Certificações",
+        "description": "Revisão MEL, programas de manutenção, aprovação de peças PMA"
+      },
+      "systems": {
+        "title": "Engenharia de Sistemas",
+        "description": "Liaison técnico, integração de frota, planejamento de manutenção"
+      }
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Disponível para consultoria em engenharia aeronáutica, projetos de redelivery e serviços de consultoria técnica.",
+    "email": "Email",
+    "phone": "Telefone",
+    "location": "Localização",
+    "downloadResume": "Baixar Currículo"
+  },
+  "footer": {
+    "copyright": "© 2024 Luis Fernando dos Santos. Portfólio de Consultor em Engenharia Aeronáutica."
+  }
+}
