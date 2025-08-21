@@ -15,7 +15,9 @@ function getLocale(request: NextRequest): string {
 	});
 
 	// Use negotiator and intl-localematcher to get best locale
-	const languages = new Negotiator({ headers: negotiatorHeaders }).languages(locales);
+	const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
+		locales,
+	);
 
 	return match(languages, locales, defaultLocale);
 }
