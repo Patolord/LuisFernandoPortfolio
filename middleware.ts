@@ -10,12 +10,12 @@ const defaultLocale = "en";
 function getLocale(request: NextRequest): string {
 	// Negotiator expects plain object so we need to transform headers
 	const negotiatorHeaders: Record<string, string> = {};
-	request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
+	request.headers.forEach((value, key) => {
+		negotiatorHeaders[key] = value;
+	});
 
 	// Use negotiator and intl-localematcher to get best locale
-	const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
-		locales,
-	);
+	const languages = new Negotiator({ headers: negotiatorHeaders }).languages(locales);
 
 	return match(languages, locales, defaultLocale);
 }

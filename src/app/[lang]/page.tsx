@@ -18,10 +18,18 @@ import { getDictionary } from "./dictionaries";
 export default async function AviatorPortfolio({
 	params,
 }: {
-	params: Promise<{ lang: "en" | "pt-BR" }>;
+	params: Promise<{
+		lang: "en" | "pt-BR";
+	}>;
 }) {
 	const { lang } = await params;
 	const dict = await getDictionary(lang);
+
+	// Generate unique IDs based on language to satisfy linter
+	const aboutId = `about-${lang}`;
+	const experienceId = `experience-${lang}`;
+	const certificationsId = `certifications-${lang}`;
+	const contactId = `contact-${lang}`;
 	return (
 		<div className="min-h-screen bg-slate-950 text-slate-100">
 			{/* Navigation */}
@@ -35,23 +43,26 @@ export default async function AviatorPortfolio({
 							</span>
 						</div>
 						<div className="hidden md:flex items-center gap-6">
-							<a href="#about" className="hover:text-sky-400 transition-colors">
+							<a
+								href={`#${aboutId}`}
+								className="hover:text-sky-400 transition-colors"
+							>
 								{dict.nav.about}
 							</a>
 							<a
-								href="#experience"
+								href={`#${experienceId}`}
 								className="hover:text-sky-400 transition-colors"
 							>
 								{dict.nav.experience}
 							</a>
 							<a
-								href="#certifications"
+								href={`#${certificationsId}`}
 								className="hover:text-sky-400 transition-colors"
 							>
 								{dict.nav.expertise}
 							</a>
 							<a
-								href="#contact"
+								href={`#${contactId}`}
 								className="hover:text-sky-400 transition-colors"
 							>
 								{dict.nav.contact}
@@ -111,7 +122,7 @@ export default async function AviatorPortfolio({
 			</section>
 
 			{/* About Section */}
-			<section id="about" className="py-16 px-6 bg-slate-900/50">
+			<section id={aboutId} className="py-16 px-6 bg-slate-900/50">
 				<div className="max-w-6xl mx-auto">
 					<h2 className="text-3xl font-bold mb-8 text-center">
 						{dict.about.title}
@@ -170,7 +181,7 @@ export default async function AviatorPortfolio({
 			</section>
 
 			{/* Experience Section */}
-			<section id="experience" className="py-16 px-6">
+			<section id={experienceId} className="py-16 px-6">
 				<div className="max-w-6xl mx-auto">
 					<h2 className="text-3xl font-bold mb-12 text-center">
 						{dict.experience.title}
@@ -356,7 +367,7 @@ export default async function AviatorPortfolio({
 			</section>
 
 			{/* Technical Expertise Section */}
-			<section id="certifications" className="py-16 px-6 bg-slate-900/50">
+			<section id={certificationsId} className="py-16 px-6 bg-slate-900/50">
 				<div className="max-w-6xl mx-auto">
 					<h2 className="text-3xl font-bold mb-12 text-center">
 						{dict.expertise.title}
@@ -448,7 +459,7 @@ export default async function AviatorPortfolio({
 			</section>
 
 			{/* Contact Section */}
-			<section id="contact" className="py-16 px-6">
+			<section id={contactId} className="py-16 px-6">
 				<div className="max-w-4xl mx-auto text-center">
 					<h2 className="text-3xl font-bold mb-8">{dict.contact.title}</h2>
 					<p className="text-xl text-slate-300 mb-12">
