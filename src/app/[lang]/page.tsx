@@ -10,65 +10,11 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import StructuredData from "@/components/StructuredData";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getDictionary } from "./dictionaries";
-
-// Structured Data for SEO
-const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "Person",
-	name: "Luis Fernando dos Santos",
-	jobTitle: "Aviation Engineering Consultant",
-	description:
-		"Experienced aviation engineer with 18+ years in commercial aircraft maintenance, redelivery projects, and technical consultancy.",
-	url: "https://luisfernandoportfolio.vercel.app",
-	sameAs: [
-		"https://linkedin.com/in/luisfernandodossantos", // Add your actual LinkedIn
-	],
-	address: {
-		"@type": "PostalAddress",
-		addressLocality: "São José dos Campos",
-		addressRegion: "SP",
-		addressCountry: "BR",
-	},
-	email: "loisfern1@hotmail.com",
-	telephone: "+55 (12) 98155-9280",
-	knowsAbout: [
-		"Aircraft Maintenance",
-		"Redelivery Projects",
-		"Aviation Consulting",
-		"Airbus A320 Family",
-		"Boeing 737/767/777",
-		"Embraer E190/E195",
-		"Aircraft Records Audit",
-		"Lessor Inspections",
-	],
-	hasCredential: [
-		{
-			"@type": "EducationalOccupationalCredential",
-			name: "Aviation Engineering",
-			credentialCategory: "Professional Experience",
-			description:
-				"18+ years in commercial aircraft maintenance and consultancy",
-		},
-	],
-	workExample: [
-		{
-			"@type": "CreativeWork",
-			name: "Aircraft Redelivery Projects",
-			description:
-				"Led comprehensive redelivery inspections and records audits for major airlines and leasing companies",
-		},
-		{
-			"@type": "CreativeWork",
-			name: "Fleet Integration Projects",
-			description:
-				"Successfully integrated ATR-42 aircraft into TAM Airlines fleet operations",
-		},
-	],
-};
 
 export default async function AviatorPortfolio({
 	params,
@@ -88,14 +34,7 @@ export default async function AviatorPortfolio({
 	return (
 		<>
 			{/* Structured Data for SEO */}
-			<script
-				type="application/ld+json"
-				suppressHydrationWarning={true}
-				// biome-ignore lint/security/noDangerouslySetInnerHtml: Required for JSON-LD structured data
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(structuredData),
-				}}
-			/>
+			<StructuredData lang={lang} />
 
 			<div className="min-h-screen bg-slate-950 text-slate-100">
 				{/* Navigation */}
