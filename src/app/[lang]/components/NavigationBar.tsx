@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { NavigationButtons } from "./NavigationButtons";
 
@@ -7,6 +10,8 @@ interface NavigationBarProps {
 }
 
 export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
+	const t = useTranslations();
+
 	return (
 		<nav className="fixed top-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
 			<div className="max-w-6xl mx-auto px-6">
@@ -21,9 +26,7 @@ export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
 						/>
 						<div>
 							<h1 className="font-bold text-lg">Luis Fernando dos Santos</h1>
-							<p className="text-sm text-slate-400">
-								Aviation Engineering Consultant
-							</p>
+							<p className="text-sm text-slate-400">{t("hero.subtitle")}</p>
 						</div>
 					</div>
 					<div className="flex items-center gap-4">

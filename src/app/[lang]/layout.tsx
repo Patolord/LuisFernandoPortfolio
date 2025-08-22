@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import type React from "react";
 
 // Generate dynamic metadata based on language
@@ -140,10 +140,15 @@ export default async function LangLayout({
 	params: Promise<{ lang: string }>;
 }>) {
 	const { lang } = await params;
-	const messages = await getMessages();
+
+	// Enable static rendering
+	setRequestLocale(lang);
+
+	// Import messages directly based on the locale from params
+	const messages = (await import(`../../../messages/${lang}.json`)).default;
 
 	return (
-		<NextIntlClientProvider messages={messages}>
+		<NextIntlClientProvider messages={messages} locale={lang}>
 			<div lang={lang}>{children}</div>
 		</NextIntlClientProvider>
 	);

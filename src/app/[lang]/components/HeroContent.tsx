@@ -1,13 +1,11 @@
-"use client";
-
 import { Award, ChevronDown, Clock, Wrench } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { HeroButtons } from "./HeroButtons";
 import { ParticleLoader } from "./ParticleLoader";
 
-export const HeroContent = () => {
-	const t = useTranslations("hero");
+export const HeroContent = async () => {
+	const t = await getTranslations("hero");
 	return (
 		<section className="pt-20 pb-16 px-6 relative overflow-hidden min-h-screen flex items-center">
 			<div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 animate-pulse"></div>
@@ -43,15 +41,15 @@ export const HeroContent = () => {
 						>
 							<div className="flex items-center gap-2 text-slate-300 hover:text-sky-400 transition-colors">
 								<Clock className="h-5 w-5 text-sky-400 animate-pulse" />
-								<span>50+ Successful Projects</span>
+								<span>{t("successfulProjects")}</span>
 							</div>
 							<div className="flex items-center gap-2 text-slate-300 hover:text-sky-400 transition-colors">
 								<Award className="h-5 w-5 text-sky-400" />
-								<span>Zero Compliance Issues</span>
+								<span>{t("complianceIssues")}</span>
 							</div>
-							<div className="flex items-center gap-2 text-slate-300 hover:text-sky-400 transition-colors">
+							<div className="flex items-center gap-2 text-slate-400 hover:text-sky-400 transition-colors">
 								<Wrench className="h-5 w-5 text-sky-400" />
-								<span>8 Aircraft Types</span>
+								<span>{t("aircraftTypes")}</span>
 							</div>
 						</div>
 						<HeroButtons />

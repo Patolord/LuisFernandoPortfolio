@@ -1,4 +1,5 @@
 import { Award, FileText, Plane, Wrench } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { Card, CardContent } from "@/components/ui/card";
 
 const aircraftTypes = [
@@ -12,26 +13,27 @@ const aircraftTypes = [
 
 const engineTypes = ["CFM56", "LEAP-1A", "V2500"];
 
-const specializations = [
-	{
-		icon: FileText,
-		title: "Redelivery & Leasing",
-		description:
-			"Lessor inspections, records audits, OCCM/HT, AD/SB compliance",
-	},
-	{
-		icon: Award,
-		title: "Certifications",
-		description: "MEL revision, maintenance programs, PMA parts approval",
-	},
-	{
-		icon: Wrench,
-		title: "Systems Engineering",
-		description: "Technical liaison, fleet integration, maintenance planning",
-	},
-];
+export const TechnicalExpertiseSection = async () => {
+	const t = await getTranslations("expertise");
 
-export const TechnicalExpertiseSection = () => {
+	const specializations = [
+		{
+			icon: FileText,
+			title: t("specializations.redelivery.title"),
+			description: t("specializations.redelivery.description"),
+		},
+		{
+			icon: Award,
+			title: t("specializations.certifications.title"),
+			description: t("specializations.certifications.description"),
+		},
+		{
+			icon: Wrench,
+			title: t("specializations.systems.title"),
+			description: t("specializations.systems.description"),
+		},
+	];
+
 	return (
 		<section className="py-16 px-6 relative" data-section="certifications">
 			<div className="absolute top-1/4 right-10 transform pointer-events-none z-0 opacity-60">
@@ -46,14 +48,12 @@ export const TechnicalExpertiseSection = () => {
 			</div>
 
 			<div className="max-w-6xl mx-auto relative z-10">
-				<h2 className="text-3xl font-bold mb-12 text-center">
-					Technical Expertise
-				</h2>
+				<h2 className="text-3xl font-bold mb-12 text-center">{t("title")}</h2>
 
 				{/* Aircraft Types */}
 				<div className="mb-12">
 					<h3 className="text-xl font-bold mb-6 text-sky-400">
-						Aircraft Platforms
+						{t("aircraftPlatforms")}
 					</h3>
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 						{aircraftTypes.map((aircraft) => (
@@ -73,7 +73,7 @@ export const TechnicalExpertiseSection = () => {
 				{/* Engine Types */}
 				<div className="mb-12">
 					<h3 className="text-xl font-bold mb-6 text-sky-400">
-						Engine Experience
+						{t("engineExperience")}
 					</h3>
 					<div className="grid md:grid-cols-3 gap-4">
 						{engineTypes.map((engine) => (
@@ -93,7 +93,7 @@ export const TechnicalExpertiseSection = () => {
 				{/* Specializations */}
 				<div>
 					<h3 className="text-xl font-bold mb-6 text-sky-400">
-						Core Specializations
+						{t("coreSpecializations")}
 					</h3>
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 						{specializations.map((spec) => {

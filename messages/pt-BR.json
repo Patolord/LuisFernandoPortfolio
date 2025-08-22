@@ -12,7 +12,12 @@
 		"yearsExperience": "18+ Anos de Experiência",
 		"location": "São José dos Campos, SP",
 		"multiPlatform": "Especialista Multi-Plataforma",
-		"viewExperience": "Ver Experiência"
+		"viewExperience": "Ver Experiência",
+		"getFreeConsultation": "Obter Consultoria Gratuita",
+		"viewTrackRecord": "Ver Histórico",
+		"successfulProjects": "50+ Projetos Bem-sucedidos",
+		"complianceIssues": "Zero Problemas de Conformidade",
+		"aircraftTypes": "8 Tipos de Aeronaves"
 	},
 	"about": {
 		"title": "Sobre Mim",
@@ -23,6 +28,12 @@
 			"aircraftProjects": "Projetos de Aeronaves",
 			"aircraftTypes": "Tipos de Aeronaves",
 			"majorAirlines": "Grandes Companhias Aéreas"
+		},
+		"counters": {
+			"years": "18+",
+			"projects": "50+",
+			"types": "8",
+			"airlines": "15+"
 		}
 	},
 	"experience": {
@@ -80,9 +91,17 @@
 		"email": "Email",
 		"phone": "Telefone",
 		"location": "Localização",
-		"downloadResume": "Baixar Currículo"
+		"downloadResume": "Iniciar Seu Projeto Hoje"
 	},
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Portfólio de Consultor em Engenharia Aeronáutica."
+	},
+	"gallery": {
+		"title": "Galeria de Aviação",
+		"description": "Aeronaves reais e ambientes de manutenção da minha experiência profissional",
+		"experienceCard": {
+			"title": "18+ Anos de Experiência Profissional",
+			"description": "Essas imagens documentam projetos reais e aeronaves nas quais trabalhei ao longo da minha carreira, abrangendo múltiplos tipos de aeronaves, ambientes de manutenção e cenários operacionais em grandes companhias aéreas brasileiras e empresas de leasing internacionais."
+		}
 	}
 }

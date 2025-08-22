@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useId } from "react";
 import { Button } from "@/components/ui/button";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
@@ -7,6 +8,7 @@ import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 export const ContactButton = () => {
 	const buttonId = useId();
 	const isVisible = useIntersectionObserver();
+	const t = useTranslations("contact");
 
 	return (
 		<div
@@ -22,7 +24,7 @@ export const ContactButton = () => {
 				size="lg"
 				className="bg-sky-600 hover:bg-sky-700 text-white transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/25"
 			>
-				Start Your Project Today
+				{t("downloadResume")}
 			</Button>
 		</div>
 	);

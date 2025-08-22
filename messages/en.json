@@ -12,7 +12,12 @@
 		"yearsExperience": "18+ Years Experience",
 		"location": "São José dos Campos, SP",
 		"multiPlatform": "Multi-Platform Expert",
-		"viewExperience": "View Experience"
+		"viewExperience": "View Experience",
+		"getFreeConsultation": "Get Free Consultation",
+		"viewTrackRecord": "View Track Record",
+		"successfulProjects": "50+ Successful Projects",
+		"complianceIssues": "Zero Compliance Issues",
+		"aircraftTypes": "8 Aircraft Types"
 	},
 	"about": {
 		"title": "About Me",
@@ -23,6 +28,12 @@
 			"aircraftProjects": "Aircraft Projects",
 			"aircraftTypes": "Aircraft Types",
 			"majorAirlines": "Major Airlines"
+		},
+		"counters": {
+			"years": "18+",
+			"projects": "50+",
+			"types": "8",
+			"airlines": "15+"
 		}
 	},
 	"experience": {
@@ -80,9 +91,17 @@
 		"email": "Email",
 		"phone": "Phone",
 		"location": "Location",
-		"downloadResume": "Download Resume"
+		"downloadResume": "Start Your Project Today"
 	},
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Aviation Engineering Consultant Portfolio."
+	},
+	"gallery": {
+		"title": "Aviation Gallery",
+		"description": "Real aircraft and maintenance environments from my professional experience",
+		"experienceCard": {
+			"title": "18+ Years of Professional Experience",
+			"description": "These images document real projects and aircraft I've worked on throughout my career, spanning multiple aircraft types, maintenance environments, and operational scenarios across major Brazilian airlines and international leasing companies."
+		}
 	}
 }

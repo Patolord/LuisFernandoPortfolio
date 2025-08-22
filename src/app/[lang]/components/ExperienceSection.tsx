@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { Badge } from "@/components/ui/badge";
 
 interface ExperienceItem {
@@ -9,52 +10,48 @@ interface ExperienceItem {
 	isLeft?: boolean;
 }
 
-const experienceItems: ExperienceItem[] = [
-	{
-		period: "Mar 2023 - Mar 2025",
-		title: "Delivery Document Auditor",
-		company: "Eirtech / JetBlue",
-		description:
-			"Performed comprehensive records audits including ADs, SBs, and APU documentation on several Embraer 195 aircraft for delivery acceptance.",
-		badges: ["Embraer E195", "Records Audit", "AD/SB Compliance"],
-		isLeft: false,
-	},
-	{
-		period: "Nov 2023 - Feb 2024",
-		title: "Lessor Representative",
-		company: "SkyOn / Azul",
-		description:
-			"Led comprehensive redelivery inspection and records audit of EMB 195 aircraft, ensuring compliance with lessor requirements and airworthiness standards.",
-		badges: ["Redelivery Inspection", "EMB 195", "Lessor Compliance"],
-		isLeft: true,
-	},
-	{
-		period: "Aug 2008 - Apr 2014",
-		title: "Systems Engineer",
-		company: "TAM Airlines",
-		description:
-			"Managed MEL and maintenance programs for multiple aircraft types, served as technical liaison with OEMs, handled PMA material approvals, and successfully integrated ATR-42 into TAM fleet operations.",
-		badges: ["MEL Management", "ATR-42 Integration", "PMA Approvals"],
-		isLeft: false,
-	},
-	{
-		period: "Apr 2014 - Jun 2019",
-		title: "Engineer",
-		company: "Avianca Brazil",
-		description:
-			"Planned and executed heavy maintenance and redelivery checks for A320/A330 fleets. Oversaw aircraft and engine redelivery to major lessors including GECAS, JSA, MCAP, McLarens, and ACG.",
-		badges: ["A320/A330 Fleet", "Heavy Maintenance", "Redelivery Projects"],
-		isLeft: true,
-	},
-];
+export const ExperienceSection = async () => {
+	const t = await getTranslations("experience");
 
-export const ExperienceSection = () => {
+	const experienceItems: ExperienceItem[] = [
+		{
+			period: t("jobs.deliveryAuditor.period"),
+			title: t("jobs.deliveryAuditor.title"),
+			company: t("jobs.deliveryAuditor.company"),
+			description: t("jobs.deliveryAuditor.description"),
+			badges: ["Embraer E195", "Records Audit", "AD/SB Compliance"],
+			isLeft: false,
+		},
+		{
+			period: t("jobs.lessorRep.period"),
+			title: t("jobs.lessorRep.title"),
+			company: t("jobs.lessorRep.company"),
+			description: t("jobs.lessorRep.description"),
+			badges: ["Redelivery Inspection", "EMB 195", "Lessor Compliance"],
+			isLeft: true,
+		},
+		{
+			period: t("jobs.systemsEngineer.period"),
+			title: t("jobs.systemsEngineer.title"),
+			company: t("jobs.systemsEngineer.company"),
+			description: t("jobs.systemsEngineer.description"),
+			badges: ["MEL Management", "ATR-42 Integration", "PMA Approvals"],
+			isLeft: false,
+		},
+		{
+			period: t("jobs.engineer.period"),
+			title: t("jobs.engineer.title"),
+			company: t("jobs.engineer.company"),
+			description: t("jobs.engineer.description"),
+			badges: ["A320/A330 Fleet", "Heavy Maintenance", "Redelivery Projects"],
+			isLeft: true,
+		},
+	];
+
 	return (
 		<section className="py-16 px-6 bg-slate-900/50" data-section="experience">
 			<div className="max-w-6xl mx-auto">
-				<h2 className="text-3xl font-bold mb-12 text-center">
-					Professional Experience
-				</h2>
+				<h2 className="text-3xl font-bold mb-12 text-center">{t("title")}</h2>
 				<div className="relative">
 					<div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-sky-400 via-sky-500 to-sky-400 shadow-lg shadow-sky-500/20"></div>
 

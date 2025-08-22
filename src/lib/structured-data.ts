@@ -2,6 +2,7 @@
 export const createStructuredData = (lang: "en" | "pt-BR") => {
 	const isPortuguese = lang === "pt-BR";
 
+	// These could be moved to translation files and imported
 	const titles = {
 		en: "Aviation Engineering Consultant",
 		"pt-BR": "Consultor em Engenharia Aeronáutica",
