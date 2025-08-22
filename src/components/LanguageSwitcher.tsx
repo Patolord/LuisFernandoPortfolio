@@ -13,8 +13,8 @@ interface LanguageSwitcherProps {
 export default function LanguageSwitcher({
 	currentLocale,
 }: LanguageSwitcherProps) {
-	const pathname = usePathname();
 	const router = useRouter();
+	const pathname = usePathname();
 
 	const switchLanguage = (newLocale: Locale) => {
 		// Remove the current locale from the pathname and add the new one
