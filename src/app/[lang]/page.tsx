@@ -22,7 +22,7 @@ export default async function AviatorPortfolio({
 		<>
 			<StructuredData lang={lang} />
 			<div className="min-h-screen bg-slate-950 text-slate-100 relative overflow-hidden">
-				<NavigationBar />
+				<NavigationBar currentLocale={lang} />
 				<FloatingShapes />
 				<HeroContent />
 				<AboutContent />

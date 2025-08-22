@@ -1,7 +1,12 @@
 import Image from "next/image";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { NavigationButtons } from "./NavigationButtons";
 
-export const NavigationBar = () => {
+interface NavigationBarProps {
+	currentLocale: "en" | "pt-BR";
+}
+
+export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
 	return (
 		<nav className="fixed top-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
 			<div className="max-w-6xl mx-auto px-6">
@@ -21,7 +26,10 @@ export const NavigationBar = () => {
 							</p>
 						</div>
 					</div>
-					<NavigationButtons />
+					<div className="flex items-center gap-4">
+						<LanguageSwitcher currentLocale={currentLocale} />
+						<NavigationButtons />
+					</div>
 				</div>
 			</div>
 		</nav>

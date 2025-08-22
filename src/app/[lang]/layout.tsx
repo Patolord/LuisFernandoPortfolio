@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import type React from "react";
 
 // Generate dynamic metadata based on language
@@ -138,6 +140,11 @@ export default async function LangLayout({
 	params: Promise<{ lang: string }>;
 }>) {
 	const { lang } = await params;
+	const messages = await getMessages();
 
-	return <div lang={lang}>{children}</div>;
+	return (
+		<NextIntlClientProvider messages={messages}>
+			<div lang={lang}>{children}</div>
+		</NextIntlClientProvider>
+	);
 }

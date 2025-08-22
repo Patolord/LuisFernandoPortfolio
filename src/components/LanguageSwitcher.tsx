@@ -23,14 +23,14 @@ export default function LanguageSwitcher({
 		router.push(newPath);
 	};
 
-	const getLanguageLabel = (locale: Locale) => {
+	const getLanguageInfo = (locale: Locale) => {
 		switch (locale) {
 			case "en":
-				return "EN";
+				return { label: "EN", flag: "🇺🇸", name: "English" };
 			case "pt-BR":
-				return "PT";
+				return { label: "PT", flag: "🇧🇷", name: "Português" };
 			default:
-				return "EN";
+				return { label: "EN", flag: "🇺🇸", name: "English" };
 		}
 	};
 
@@ -39,16 +39,29 @@ export default function LanguageSwitcher({
 	};
 
 	const otherLocale = getOtherLocale(currentLocale);
+	const otherLanguageInfo = getLanguageInfo(otherLocale);
+	const currentLanguageInfo = getLanguageInfo(currentLocale);
 
 	return (
-		<Button
-			variant="outline"
-			size="sm"
-			onClick={() => switchLanguage(otherLocale)}
-			className="flex items-center gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white"
-		>
-			<Languages className="h-4 w-4" />
-			{getLanguageLabel(otherLocale)}
-		</Button>
+		<div className="flex items-center gap-2">
+			{/* Current language indicator */}
+			<div className="flex items-center gap-1 text-slate-400 text-sm">
+				<span>{currentLanguageInfo.flag}</span>
+				<span>{currentLanguageInfo.label}</span>
+			</div>
+
+			{/* Language switcher button */}
+			<Button
+				variant="outline"
+				size="sm"
+				onClick={() => switchLanguage(otherLocale)}
+				className="flex items-center gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white transition-all duration-200"
+				title={`Switch to ${otherLanguageInfo.name}`}
+			>
+				<Languages className="h-4 w-4" />
+				<span>{otherLanguageInfo.flag}</span>
+				<span>{otherLanguageInfo.label}</span>
+			</Button>
+		</div>
 	);
 }

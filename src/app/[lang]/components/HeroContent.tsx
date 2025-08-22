@@ -1,9 +1,13 @@
+"use client";
+
 import { Award, ChevronDown, Clock, Wrench } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { HeroButtons } from "./HeroButtons";
 import { ParticleLoader } from "./ParticleLoader";
 
 export const HeroContent = () => {
+	const t = useTranslations("hero");
 	return (
 		<section className="pt-20 pb-16 px-6 relative overflow-hidden min-h-screen flex items-center">
 			<div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 animate-pulse"></div>
@@ -18,23 +22,20 @@ export const HeroContent = () => {
 								className="inline-block animate-fade-in-up"
 								style={{ animationDelay: "0.2s" }}
 							>
-								Reduce Aircraft
+								{t("title")}
 							</span>
 							<span
 								className="text-sky-400 block animate-fade-in-up"
 								style={{ animationDelay: "0.4s" }}
 							>
-								Downtime & Costs
+								{t("subtitle")}
 							</span>
 						</h1>
 						<p
 							className="text-xl text-slate-300 leading-relaxed animate-fade-in-up"
 							style={{ animationDelay: "0.6s" }}
 						>
-							Expert aviation engineering consultant delivering faster aircraft
-							redeliveries, seamless lessor inspections, and compliant
-							maintenance programs. Save time and money with 18+ years of proven
-							results across major airlines and leasing companies.
+							{t("description")}
 						</p>
 						<div
 							className="flex flex-wrap gap-4 animate-fade-in-up"
