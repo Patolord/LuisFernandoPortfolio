@@ -9,12 +9,7 @@ export const size = {
 export const contentType = "image/png";
 
 // Image generation - reuse the same design as OpenGraph
-export default async function Image({
-	params,
-}: {
-	params: Promise<{ lang: "en" | "pt-BR" }>;
-}) {
-	const { lang } = await params;
+export default async function Image() {
 	return new ImageResponse(
 		<div
 			style={{
@@ -66,9 +61,7 @@ export default async function Image({
 					marginBottom: "30px",
 				}}
 			>
-				{lang === "pt-BR"
-					? "Consultor em Engenharia Aeronáutica"
-					: "Aviation Engineering Consultant"}
+				Aviation Engineering Consultant
 			</div>
 
 			{/* Experience Badge */}
@@ -83,9 +76,7 @@ export default async function Image({
 					color: "white",
 				}}
 			>
-				{lang === "pt-BR"
-					? "18+ Anos de Experiência em Aviação Comercial"
-					: "18+ Years Experience in Commercial Aviation"}
+				18+ Years Experience in Commercial Aviation
 			</div>
 		</div>,
 		{
