@@ -25,8 +25,11 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
 	const { pathname } = request.nextUrl;
 
+	console.log("Middleware hit:", pathname);
+
 	// Skip if the path has a file extension (static files)
 	if (pathname.includes(".")) {
+		console.log("Skipping file extension:", pathname);
 		return;
 	}
 
@@ -35,13 +38,23 @@ export function middleware(request: NextRequest) {
 		(locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
 	);
 
-	if (pathnameHasLocale) return;
+	if (pathnameHasLocale) {
+		console.log("Already has locale:", pathname);
+		return;
+	}
 
 	// Redirect if there is no locale
 	const locale = getLocale(request);
-	request.nextUrl.pathname = `/${locale}${pathname}`;
-	// e.g. incoming request is /products
-	// The new URL is now /en/products
+	console.log("Redirecting to locale:", locale, "from:", pathname);
+
+	// Handle root path specifically
+	if (pathname === "/") {
+		request.nextUrl.pathname = `/${locale}`;
+	} else {
+		request.nextUrl.pathname = `/${locale}${pathname}`;
+	}
+
+	console.log("New pathname:", request.nextUrl.pathname);
 	return NextResponse.redirect(request.nextUrl);
 }
 

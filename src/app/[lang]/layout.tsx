@@ -84,11 +84,22 @@ export async function generateMetadata({
 			title: titles[lang],
 			description: descriptions[lang],
 			siteName: "Luis Fernando dos Santos Portfolio",
+			images: [
+				{
+					url: `https://luisfernandoportfolio.vercel.app/${lang}/opengraph-image`,
+					width: 1200,
+					height: 630,
+					alt: titles[lang],
+				},
+			],
 		},
 		twitter: {
 			card: "summary_large_image",
 			title: titles[lang],
 			description: descriptions[lang],
+			images: [
+				`https://luisfernandoportfolio.vercel.app/${lang}/opengraph-image`,
+			],
 		},
 		robots: {
 			index: true,
@@ -103,6 +114,17 @@ export async function generateMetadata({
 		},
 		verification: {
 			google: "your-google-verification-code",
+		},
+		category: "Professional Services",
+		classification: "Aviation Engineering Consulting",
+		other: {
+			"linkedin:card": "summary_large_image",
+			"business:contact_data:street_address": "São José dos Campos",
+			"business:contact_data:locality": "São Paulo",
+			"business:contact_data:region": "SP",
+			"business:contact_data:country_name": "Brazil",
+			"business:contact_data:email": "loisfern1@hotmail.com",
+			"business:contact_data:phone_number": "+55 (12) 98155-9280",
 		},
 	};
 }

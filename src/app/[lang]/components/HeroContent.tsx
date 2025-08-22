@@ -1,0 +1,80 @@
+import { Award, ChevronDown, Clock, Wrench } from "lucide-react";
+import Image from "next/image";
+import { HeroButtons } from "./HeroButtons";
+import { ParticleLoader } from "./ParticleLoader";
+
+export const HeroContent = () => {
+	return (
+		<section className="pt-20 pb-16 px-6 relative overflow-hidden min-h-screen flex items-center">
+			<div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 animate-pulse"></div>
+
+			<ParticleLoader />
+
+			<div className="max-w-6xl mx-auto relative z-10">
+				<div className="grid lg:grid-cols-2 gap-12 items-center">
+					<div className="space-y-6 animate-fade-in-up">
+						<h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+							<span
+								className="inline-block animate-fade-in-up"
+								style={{ animationDelay: "0.2s" }}
+							>
+								Reduce Aircraft
+							</span>
+							<span
+								className="text-sky-400 block animate-fade-in-up"
+								style={{ animationDelay: "0.4s" }}
+							>
+								Downtime & Costs
+							</span>
+						</h1>
+						<p
+							className="text-xl text-slate-300 leading-relaxed animate-fade-in-up"
+							style={{ animationDelay: "0.6s" }}
+						>
+							Expert aviation engineering consultant delivering faster aircraft
+							redeliveries, seamless lessor inspections, and compliant
+							maintenance programs. Save time and money with 18+ years of proven
+							results across major airlines and leasing companies.
+						</p>
+						<div
+							className="flex flex-wrap gap-4 animate-fade-in-up"
+							style={{ animationDelay: "0.8s" }}
+						>
+							<div className="flex items-center gap-2 text-slate-300 hover:text-sky-400 transition-colors">
+								<Clock className="h-5 w-5 text-sky-400 animate-pulse" />
+								<span>50+ Successful Projects</span>
+							</div>
+							<div className="flex items-center gap-2 text-slate-300 hover:text-sky-400 transition-colors">
+								<Award className="h-5 w-5 text-sky-400" />
+								<span>Zero Compliance Issues</span>
+							</div>
+							<div className="flex items-center gap-2 text-slate-300 hover:text-sky-400 transition-colors">
+								<Wrench className="h-5 w-5 text-sky-400" />
+								<span>8 Aircraft Types</span>
+							</div>
+						</div>
+						<HeroButtons />
+					</div>
+					<div
+						className="relative animate-fade-in-right"
+						style={{ animationDelay: "0.4s" }}
+					>
+						<div className="aspect-square rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-sky-500/20">
+							<Image
+								src="/images/cockpit-interior.jpg"
+								alt="Professional aircraft cockpit - Luis Fernando's work environment"
+								width={400}
+								height={400}
+								className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+				<ChevronDown className="h-6 w-6 text-sky-400" />
+			</div>
+		</section>
+	);
+};

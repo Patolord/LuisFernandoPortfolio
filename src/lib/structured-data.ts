@@ -15,11 +15,12 @@ export const createStructuredData = (lang: "en" | "pt-BR") => {
 
 	return {
 		"@context": "https://schema.org",
-		"@type": "Person",
+		"@type": ["Person", "ProfessionalService"],
 		name: "Luis Fernando dos Santos",
 		jobTitle: titles[lang],
 		description: descriptions[lang],
 		url: `https://luisfernandoportfolio.vercel.app/${lang}`,
+		image: `https://luisfernandoportfolio.vercel.app/${lang}/opengraph-image`,
 		sameAs: [
 			"https://linkedin.com/in/luisfernandodossantos", // Add your actual LinkedIn
 		],
@@ -31,6 +32,22 @@ export const createStructuredData = (lang: "en" | "pt-BR") => {
 		},
 		email: "loisfern1@hotmail.com",
 		telephone: "+55 (12) 98155-9280",
+		areaServed: [
+			{
+				"@type": "Country",
+				name: "Brazil",
+			},
+			{
+				"@type": "Country",
+				name: "International",
+			},
+		],
+		serviceType: [
+			isPortuguese ? "Consultoria em Aviação" : "Aviation Consulting",
+			isPortuguese ? "Projetos de Redelivery" : "Redelivery Projects",
+			isPortuguese ? "Inspeções de Aeronaves" : "Aircraft Inspections",
+			isPortuguese ? "Auditoria de Registros" : "Records Auditing",
+		],
 		knowsAbout: [
 			isPortuguese ? "Manutenção de Aeronaves" : "Aircraft Maintenance",
 			isPortuguese ? "Projetos de Redelivery" : "Redelivery Projects",
@@ -64,6 +81,11 @@ export const createStructuredData = (lang: "en" | "pt-BR") => {
 				description: isPortuguese
 					? "Liderou inspeções abrangentes de redelivery e auditorias de registros para grandes companhias aéreas e empresas de leasing"
 					: "Led comprehensive redelivery inspections and records audits for major airlines and leasing companies",
+				about: [
+					"Aircraft Inspection",
+					"Records Audit",
+					"Lessor Representative",
+				],
 			},
 			{
 				"@type": "CreativeWork",
@@ -73,7 +95,29 @@ export const createStructuredData = (lang: "en" | "pt-BR") => {
 				description: isPortuguese
 					? "Integrou com sucesso aeronaves ATR-42 nas operações de frota da TAM Airlines"
 					: "Successfully integrated ATR-42 aircraft into TAM Airlines fleet operations",
+				about: [
+					"Fleet Management",
+					"Aircraft Integration",
+					"Operational Planning",
+				],
 			},
+		],
+		makesOffer: {
+			"@type": "Offer",
+			name: isPortuguese
+				? "Serviços de Consultoria em Aviação"
+				: "Aviation Consulting Services",
+			description: isPortuguese
+				? "Consultoria especializada em manutenção de aeronaves, projetos de redelivery e inspeções técnicas"
+				: "Specialized consulting in aircraft maintenance, redelivery projects, and technical inspections",
+			areaServed: ["Brazil", "International"],
+			availableDeliveryMethod: ["Remote", "On-site"],
+		},
+		award: [
+			isPortuguese
+				? "Zero Problemas de Conformidade"
+				: "Zero Compliance Issues",
+			isPortuguese ? "50+ Projetos Bem-sucedidos" : "50+ Successful Projects",
 		],
 	};
 };
