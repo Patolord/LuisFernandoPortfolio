@@ -24,7 +24,7 @@ export const HeroButtons = () => {
 				{t("getFreeConsultation")}
 			</Button>
 			<Button
-				size="lg"
+				size="sm"
 				variant="outline"
 				onClick={() => scrollToSection("experience")}
 				className="border-sky-600 text-sky-400 hover:bg-sky-600 hover:text-white transform hover:scale-105 transition-all duration-300"
