@@ -34,11 +34,11 @@ export const ParticleBackground = () => {
 		() => ({
 			particles: {
 				number: {
-					value: 100,
+					value: 150,
 				},
 				move: {
 					direction: MoveDirection.none,
-					enable: true,
+					enable: false,
 					outModes: {
 						default: OutMode.bounce,
 					},
