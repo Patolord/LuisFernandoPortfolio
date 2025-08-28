@@ -35,7 +35,7 @@ export const TechnicalExpertiseSection = async () => {
 	];
 
 	return (
-		<section className="py-16 px-6 relative" data-section="certifications">
+		<section className="py-16 px-6 relative" data-section="expertise">
 			<div className="max-w-6xl mx-auto relative z-10">
 				<h2 className="text-3xl font-bold mb-12 text-center">{t("title")}</h2>
 

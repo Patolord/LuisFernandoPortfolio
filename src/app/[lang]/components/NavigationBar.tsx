@@ -18,15 +18,16 @@ export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
 				<div className="flex items-center justify-between h-16">
 					<div className="flex items-center gap-4">
 						<Image
-							src="/images/lfs-aviation-logo.jpg"
+							src="/images/lfs-aviation-logo-nobg.png"
 							alt="LFS Aviation Logo"
-							width={48}
-							height={48}
-							className="h-12 w-auto"
+							width={128}
+							height={128}
+							className="h-20 w-20 object-cover"
+							priority
 						/>
 						<div>
 							<h1 className="font-bold text-lg">Luis Fernando dos Santos</h1>
-							<p className="text-sm text-slate-400">{t("hero.subtitle")}</p>
+							<p className="text-sm text-slate-400">{t("nav.slogan")}</p>
 						</div>
 					</div>
 					<div className="flex items-center gap-4">

@@ -3,17 +3,18 @@
 		"about": "About",
 		"experience": "Experience",
 		"expertise": "Expertise",
-		"contact": "Contact"
+		"contact": "Contact",
+		"slogan": "Trusted performance for your fleet"
 	},
 	"hero": {
 		"title": "Aviation Engineering ",
 		"subtitle": "that Delivers Results",
-		"description": "Trusted by major airlines and leasing companies worldwide, I help ensure seamless fleet transitions, 100% regulatory compliance, and reduced operational risk across Airbus, Boeing, Embraer, ATR, and Fokker platforms.",
+		"description": "Trusted by airlines and leasing companies worldwide, I reduce operational risk, secure 100% compliance, and ensure smooth fleet transitions across Airbus, Boeing, Embraer, ATR, and Fokker platforms.",
 		"yearsExperience": "18+ Years Delivering Results",
 		"location": "São José dos Campos, SP",
 		"multiPlatform": "Expertise Across Airbus, Boeing, Embraer, ATR & Fokker",
-		"viewExperience": "See Track Record",
-		"getFreeConsultation": "Get Your Free Consultation",
+		"viewExperience": "View Track Record",
+		"getFreeConsultation": "Request a Consultation",
 		"viewTrackRecord": "View Track Record",
 		"successfulProjects": "50+ Successful Projects",
 		"complianceIssues": "100% Compliance Rate",
@@ -21,8 +22,8 @@
 	},
 	"about": {
 		"title": "Why Choose Me",
-		"description1": "I deliver measurable results for aviation companies through specialized expertise in commercial aircraft maintenance and technical consultancy. My proven track record includes successful aircraft redelivery projects, airworthiness documentation, and seamless fleet transitions across multiple aircraft platforms.",
-		"description2": "I work exclusively with major aircraft manufacturers including Airbus, Boeing, Embraer, ATR, and Fokker, providing comprehensive lessor inspections, records audits, and physical condition reviews that protect your investment and ensure regulatory compliance.",
+		"description1": "I help airlines and lessors protect asset value with specialized expertise in commercial aircraft maintenance, redelivery, and technical consultancy. My work focuses on measurable outcomes: lower risk, faster transitions, and approved documentation.",
+		"description2": "Experience across Airbus, Boeing, Embraer, ATR, and Fokker. I deliver comprehensive lessor inspections, records audits, and physical condition reviews that ensure airworthiness and regulatory approval.",
 		"stats": {
 			"yearsExperience": "Years Delivering Results",
 			"aircraftProjects": "Projects Completed",
@@ -43,25 +44,37 @@
 				"title": "Delivery Document Auditor",
 				"company": "Eirtech / JetBlue",
 				"period": "Mar 2023 - Mar 2025",
-				"description": "Delivered comprehensive records audits including ADs, SBs, and APU documentation on several Embraer 195 aircraft, ensuring smooth delivery acceptance and regulatory compliance."
+				"description": "Led records audits (ADs, SBs, APU) on E195 aircraft, enabling smooth acceptance and full regulatory compliance."
 			},
 			"lessorRep": {
 				"title": "Lessor Representative",
 				"company": "SkyOn / Azul",
 				"period": "Nov 2023 - Feb 2024",
-				"description": "Successfully led comprehensive redelivery inspection and records audit of EMB 195 aircraft, exceeding lessor requirements and maintaining airworthiness standards."
+				"description": "Directed comprehensive redelivery inspection and records audit for E195, exceeding lessor requirements."
 			},
-			"systemsEngineer": {
-				"title": "Systems Engineer",
-				"company": "TAM Airlines",
-				"period": "Aug 2008 - Apr 2014",
-				"description": "Optimized MEL and maintenance programs for multiple aircraft types, served as technical liaison with OEMs, streamlined PMA material approvals, and successfully integrated ATR-42 into TAM fleet operations."
+			"northCompass": {
+				"title": "Lessor Representative",
+				"company": "North Compass / Avelo",
+				"period": "Apr 2023 - Jul 2023",
+				"description": "Delivered B737-800 redelivery project, including OCCM and HT documentation audits."
+			},
+			"pcaAirworthiness": {
+				"title": "Project Manager / Auditor",
+				"company": "PCA Airworthiness",
+				"period": "Jun 2019 - Jul 2021",
+				"description": "Managed B737-700 redelivery and performed delivery inspections/audits on A320 family aircraft and CFM56 engines."
 			},
 			"engineer": {
 				"title": "Engineer",
 				"company": "Avianca Brazil",
 				"period": "Apr 2014 - Jun 2019",
-				"description": "Planned and executed heavy maintenance and redelivery checks for A320/A330 fleets. Successfully managed aircraft and engine redelivery to major lessors including GECAS, JSA, MCAP, McLarens, and ACG."
+				"description": "Planned and executed heavy checks and redeliveries (A320/A330), coordinating returns to major lessors (e.g., GECAS, JSA, MCAP, McLarens, ACG)."
+			},
+			"systemsEngineer": {
+				"title": "Systems Engineer",
+				"company": "TAM Airlines",
+				"period": "Aug 2008 - Apr 2014",
+				"description": "Managed MEL and maintenance programs across types, served as OEM liaison, approved PMA materials, and integrated ATR-42 into fleet."
 			}
 		}
 	},
@@ -70,10 +83,11 @@
 		"aircraftPlatforms": "Aircraft Platforms",
 		"engineExperience": "Engine Experience",
 		"coreSpecializations": "Core Solutions",
+		"engines": "CFM56, LEAP-1A, V2500",
 		"specializations": {
 			"redelivery": {
 				"title": "Redelivery & Leasing Solutions",
-				"description": "Comprehensive lessor inspections, records audits, OCCM/HT compliance, AD/SB management"
+				"description": "Lessor inspections, records audits, OCCM/HT compliance, AD/SB management, physical condition review"
 			},
 			"certifications": {
 				"title": "Certification & Compliance",
@@ -81,27 +95,61 @@
 			},
 			"systems": {
 				"title": "Systems Engineering",
-				"description": "Technical liaison services, fleet integration strategies, maintenance planning optimization"
+				"description": "Technical liaison with OEMs, fleet integration strategies, maintenance planning optimization"
 			}
 		}
 	},
 	"contact": {
-		"title": "Ready to Transform Your Aviation Operations?",
-		"description": "Let's discuss how my expertise can solve your aviation engineering challenges. Available for consultancy, redelivery projects, and technical advisory services.",
+		"title": "Request a Consultation",
+		"description": "Let’s discuss your aircraft redelivery, compliance, or technical operations challenges. Available for consultancy, redelivery projects, and technical advisory.",
 		"email": "Email",
 		"phone": "Phone",
 		"location": "Location",
-		"downloadResume": "Start Your Project Today"
+		"downloadResume": "Download Resume"
 	},
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Aviation Engineering Solutions Portfolio."
 	},
 	"gallery": {
 		"title": "Real Results Gallery",
-		"description": "Actual aircraft and maintenance environments from successful projects I've delivered",
+		"description": "Images from actual inspections, audits, and maintenance environments across major commercial platforms.",
+		"items": {
+			"golBoeing": {
+				"title": "GOL Boeing 737-800",
+				"description": "Heavy maintenance operations in professional hangar facility"
+			},
+			"nightOperations": {
+				"title": "Night Operations",
+				"description": "Modern cockpit systems and instrumentation during night operations"
+			},
+			"azulEmbraer": {
+				"title": "Azul Embraer E195",
+				"description": "Redelivery project - SkyOn/Azul lessor representative work"
+			},
+			"maintenanceFacility": {
+				"title": "Maintenance Facility",
+				"description": "State-of-the-art hangar for comprehensive aircraft inspections"
+			},
+			"technicalMaintenance": {
+				"title": "Technical Maintenance",
+				"description": "Professional maintenance environment with specialized equipment"
+			},
+			"regionalAircraft": {
+				"title": "Regional Aircraft",
+				"description": "Turboprop operations - diverse aircraft type experience"
+			},
+			"fieldOperations": {
+				"title": "Field Operations",
+				"description": "Operational aviation work on active airport tarmac"
+			},
+			"cockpitSystems": {
+				"title": "Cockpit Systems",
+				"description": "Modern avionics and flight management systems"
+			}
+		},
 		"experienceCard": {
 			"title": "18+ Years of Delivering Results",
-			"description": "These images showcase real projects and aircraft I've successfully completed throughout my career, demonstrating expertise across multiple aircraft types, maintenance environments, and operational scenarios for major Brazilian airlines and international leasing companies."
+			"description": "Selected projects across Airbus, Boeing, Embraer, ATR, and Fokker—demonstrating compliance, documentation rigor, and on-time delivery for airlines and lessors."
 		}
 	}
 }
