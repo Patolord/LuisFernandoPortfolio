@@ -2,7 +2,7 @@ import { Award, ChevronDown, Clock, Wrench } from "lucide-react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { HeroButtons } from "./HeroButtons";
-import { ParticleLoader } from "./ParticleLoader";
+import ParticleBackground from "./ParticleBackground";
 
 export const HeroContent = async () => {
 	const t = await getTranslations("hero");
@@ -10,12 +10,10 @@ export const HeroContent = async () => {
 		<section className="pt-20 pb-16 px-6 relative overflow-hidden min-h-screen flex items-center">
 			<div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 animate-pulse"></div>
 
-			<ParticleLoader />
-
 			<div className="max-w-6xl mx-auto relative z-10">
 				<div className="grid lg:grid-cols-2 gap-12 items-center">
 					<div className="space-y-6 animate-fade-in-up">
-						<h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+						<h1 className="text-4xl lg:text-5xl font-bold leading-tight">
 							<span
 								className="inline-block animate-fade-in-up"
 								style={{ animationDelay: "0.2s" }}
@@ -23,7 +21,7 @@ export const HeroContent = async () => {
 								{t("title")}
 							</span>
 							<span
-								className="text-sky-400 block animate-fade-in-up"
+								className="text-sky-400 block animate-fade-in-up text-3xl lg:text-4xl"
 								style={{ animationDelay: "0.4s" }}
 							>
 								{t("subtitle")}
@@ -70,6 +68,7 @@ export const HeroContent = async () => {
 					</div>
 				</div>
 			</div>
+			<ParticleBackground />
 
 			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
 				<ChevronDown className="h-6 w-6 text-sky-400" />

@@ -36,17 +36,6 @@ export const TechnicalExpertiseSection = async () => {
 
 	return (
 		<section className="py-16 px-6 relative" data-section="certifications">
-			<div className="absolute top-1/4 right-10 transform pointer-events-none z-0 opacity-60">
-				<div className="relative w-32 h-32">
-					<div className="absolute inset-0 border border-green-400/50 rounded-full animate-spin"></div>
-					<div className="absolute inset-2 border border-green-400/40 rounded-full animate-spin"></div>
-					<div className="absolute inset-4 border border-green-400/30 rounded-full animate-spin"></div>
-					<div className="absolute inset-0">
-						<div className="w-full h-0.5 bg-gradient-to-r from-green-400/80 to-transparent absolute top-1/2 origin-left animate-spin"></div>
-					</div>
-				</div>
-			</div>
-
 			<div className="max-w-6xl mx-auto relative z-10">
 				<h2 className="text-3xl font-bold mb-12 text-center">{t("title")}</h2>
 

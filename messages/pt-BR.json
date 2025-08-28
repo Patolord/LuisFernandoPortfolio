@@ -7,27 +7,27 @@
 	},
 	"hero": {
 		"title": "Engenharia Aeronáutica",
-		"subtitle": "Consultor",
-		"description": "Engenheiro aeronáutico experiente com mais de 18 anos em manutenção de aeronaves comerciais, projetos de redelivery e consultoria técnica para grandes companhias aéreas e empresas de leasing.",
-		"yearsExperience": "18+ Anos de Experiência",
+		"subtitle": "que Gera Resultados",
+		"description": "Confiado por grandes companhias aéreas e empresas de leasing em todo o mundo, ajudo a garantir transições de frota sem problemas, 100% de conformidade regulatória e redução de risco operacional em plataformas Airbus, Boeing, Embraer, ATR e Fokker.",
+		"yearsExperience": "18+ Anos Entregando Resultados",
 		"location": "São José dos Campos, SP",
-		"multiPlatform": "Especialista Multi-Plataforma",
-		"viewExperience": "Ver Experiência",
-		"getFreeConsultation": "Obter Consultoria Gratuita",
+		"multiPlatform": "Expertise em Airbus, Boeing, Embraer, ATR & Fokker",
+		"viewExperience": "Ver Histórico",
+		"getFreeConsultation": "Obter Sua Consultoria Gratuita",
 		"viewTrackRecord": "Ver Histórico",
 		"successfulProjects": "50+ Projetos Bem-sucedidos",
-		"complianceIssues": "Zero Problemas de Conformidade",
-		"aircraftTypes": "8 Tipos de Aeronaves"
+		"complianceIssues": "100% Taxa de Conformidade",
+		"aircraftTypes": "8 Tipos de Aeronaves Suportados"
 	},
 	"about": {
-		"title": "Sobre Mim",
-		"description1": "Com mais de 18 anos de experiência especializada em manutenção de aeronaves comerciais e consultoria técnica, me estabeleci como um especialista confiável em projetos de redelivery de aeronaves, documentação de aeronavegabilidade e transições de frota em múltiplas plataformas de aeronaves.",
-		"description2": "Minha expertise abrange os principais fabricantes de aeronaves incluindo Airbus, Boeing, Embraer, ATR e Fokker, com vasta experiência em inspeções de lessors, auditorias de registros e revisões de condição física para companhias aéreas e empresas de leasing em todo o mundo.",
+		"title": "Por Que Me Escolher",
+		"description1": "Entreguei resultados mensuráveis para empresas de aviação através de expertise especializada em manutenção de aeronaves comerciais e consultoria técnica. Meu histórico comprovado inclui projetos bem-sucedidos de redelivery de aeronaves, documentação de aeronavegabilidade e transições de frota sem problemas em múltiplas plataformas de aeronaves.",
+		"description2": "Trabalho exclusivamente com os principais fabricantes de aeronaves incluindo Airbus, Boeing, Embraer, ATR e Fokker, fornecendo inspeções abrangentes de lessors, auditorias de registros e revisões de condição física que protegem seu investimento e garantem conformidade regulatória.",
 		"stats": {
-			"yearsExperience": "Anos de Experiência",
-			"aircraftProjects": "Projetos de Aeronaves",
-			"aircraftTypes": "Tipos de Aeronaves",
-			"majorAirlines": "Grandes Companhias Aéreas"
+			"yearsExperience": "Anos Entregando Resultados",
+			"aircraftProjects": "Projetos Concluídos",
+			"aircraftTypes": "Tipos de Aeronaves Suportados",
+			"majorAirlines": "Grandes Companhias Aéreas Atendidas"
 		},
 		"counters": {
 			"years": "18+",
@@ -37,71 +37,71 @@
 		}
 	},
 	"experience": {
-		"title": "Experiência Profissional",
+		"title": "Histórico Comprovado",
 		"jobs": {
 			"deliveryAuditor": {
 				"title": "Auditor de Documentos de Entrega",
 				"company": "Eirtech / JetBlue",
 				"period": "Mar 2023 - Mar 2025",
-				"description": "Realizou auditorias abrangentes de registros incluindo ADs, SBs e documentação de APU em várias aeronaves Embraer 195 para aceitação de entrega."
+				"description": "Entreguei auditorias abrangentes de registros incluindo ADs, SBs e documentação de APU em várias aeronaves Embraer 195, garantindo aceitação de entrega suave e conformidade regulatória."
 			},
 			"lessorRep": {
 				"title": "Representante do Lessor",
 				"company": "SkyOn / Azul",
 				"period": "Nov 2023 - Fev 2024",
-				"description": "Liderou inspeção abrangente de redelivery e auditoria de registros de aeronave EMB 195, garantindo conformidade com requisitos do lessor e padrões de aeronavegabilidade."
+				"description": "Liderou com sucesso inspeção abrangente de redelivery e auditoria de registros de aeronave EMB 195, superando requisitos do lessor e mantendo padrões de aeronavegabilidade."
 			},
 			"systemsEngineer": {
 				"title": "Engenheiro de Sistemas",
 				"company": "TAM Airlines",
 				"period": "Ago 2008 - Abr 2014",
-				"description": "Gerenciou MEL e programas de manutenção para múltiplos tipos de aeronaves, serviu como liaison técnico com OEMs, tratou aprovações de materiais PMA e integrou com sucesso o ATR-42 nas operações da frota TAM."
+				"description": "Otimizei MEL e programas de manutenção para múltiplos tipos de aeronaves, servi como liaison técnico com OEMs, simplifiquei aprovações de materiais PMA e integrei com sucesso o ATR-42 nas operações da frota TAM."
 			},
 			"engineer": {
 				"title": "Engenheiro",
 				"company": "Avianca Brazil",
 				"period": "Abr 2014 - Jun 2019",
-				"description": "Planejou e executou manutenção pesada e verificações de redelivery para frotas A320/A330. Supervisionou redelivery de aeronaves e motores para grandes lessors incluindo GECAS, JSA, MCAP, McLarens e ACG."
+				"description": "Planejei e executei manutenção pesada e verificações de redelivery para frotas A320/A330. Gerenciei com sucesso redelivery de aeronaves e motores para grandes lessors incluindo GECAS, JSA, MCAP, McLarens e ACG."
 			}
 		}
 	},
 	"expertise": {
-		"title": "Especialidade Técnica",
+		"title": "Soluções Que Entreguei",
 		"aircraftPlatforms": "Plataformas de Aeronaves",
 		"engineExperience": "Experiência com Motores",
-		"coreSpecializations": "Especializações Principais",
+		"coreSpecializations": "Soluções Principais",
 		"specializations": {
 			"redelivery": {
-				"title": "Redelivery e Leasing",
-				"description": "Inspeções de lessor, auditorias de registros, OCCM/HT, conformidade AD/SB"
+				"title": "Soluções de Redelivery e Leasing",
+				"description": "Inspeções abrangentes de lessor, auditorias de registros, conformidade OCCM/HT, gerenciamento AD/SB"
 			},
 			"certifications": {
-				"title": "Certificações",
-				"description": "Revisão MEL, programas de manutenção, aprovação de peças PMA"
+				"title": "Certificação e Conformidade",
+				"description": "Otimização MEL, desenvolvimento de programas de manutenção, processos de aprovação de peças PMA"
 			},
 			"systems": {
 				"title": "Engenharia de Sistemas",
-				"description": "Liaison técnico, integração de frota, planejamento de manutenção"
+				"description": "Serviços de liaison técnico, estratégias de integração de frota, otimização de planejamento de manutenção"
 			}
 		}
 	},
 	"contact": {
-		"title": "Entre em Contato",
-		"description": "Disponível para consultoria em engenharia aeronáutica, projetos de redelivery e serviços de consultoria técnica.",
+		"title": "Pronto para Transformar Suas Operações Aeronáuticas?",
+		"description": "Vamos discutir como minha expertise pode resolver seus desafios de engenharia aeronáutica. Disponível para consultoria, projetos de redelivery e serviços de consultoria técnica.",
 		"email": "Email",
 		"phone": "Telefone",
 		"location": "Localização",
 		"downloadResume": "Iniciar Seu Projeto Hoje"
 	},
 	"footer": {
-		"copyright": "© 2024 Luis Fernando dos Santos. Portfólio de Consultor em Engenharia Aeronáutica."
+		"copyright": "© 2024 Luis Fernando dos Santos. Portfólio de Soluções em Engenharia Aeronáutica."
 	},
 	"gallery": {
-		"title": "Galeria de Aviação",
-		"description": "Aeronaves reais e ambientes de manutenção da minha experiência profissional",
+		"title": "Galeria de Resultados Reais",
+		"description": "Aeronaves reais e ambientes de manutenção de projetos bem-sucedidos que entreguei",
 		"experienceCard": {
-			"title": "18+ Anos de Experiência Profissional",
-			"description": "Essas imagens documentam projetos reais e aeronaves nas quais trabalhei ao longo da minha carreira, abrangendo múltiplos tipos de aeronaves, ambientes de manutenção e cenários operacionais em grandes companhias aéreas brasileiras e empresas de leasing internacionais."
+			"title": "18+ Anos Entregando Resultados",
+			"description": "Essas imagens mostram projetos reais e aeronaves que concluí com sucesso ao longo da minha carreira, demonstrando expertise em múltiplos tipos de aeronaves, ambientes de manutenção e cenários operacionais para grandes companhias aéreas brasileiras e empresas de leasing internacionais."
 		}
 	}
 }

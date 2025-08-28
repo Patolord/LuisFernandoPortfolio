@@ -4,7 +4,6 @@ import { AboutContent } from "./components/AboutContent";
 import { ContactContent } from "./components/ContactContent";
 
 import { ExperienceSection } from "./components/ExperienceSection";
-import { FloatingShapes } from "./components/FloatingShapes";
 import { Footer } from "./components/Footer";
 import { GalleryContent } from "./components/GalleryContent";
 import { HeroContent } from "./components/HeroContent";
@@ -32,8 +31,6 @@ export default async function AviatorPortfolio({
 			<StructuredData lang={lang} />
 			<div className="min-h-screen bg-slate-950 text-slate-100 relative overflow-hidden">
 				<NavigationBar currentLocale={lang} />
-
-				<FloatingShapes />
 				<HeroContent />
 				<AboutContent />
 				<GalleryContent />
