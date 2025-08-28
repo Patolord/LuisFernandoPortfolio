@@ -30,8 +30,8 @@ export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
 						</div>
 					</div>
 					<div className="flex items-center gap-4">
-						<LanguageSwitcher currentLocale={currentLocale} />
 						<NavigationButtons />
+						<LanguageSwitcher currentLocale={currentLocale} />
 					</div>
 				</div>
 			</div>

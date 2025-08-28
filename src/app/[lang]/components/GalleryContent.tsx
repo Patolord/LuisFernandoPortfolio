@@ -83,7 +83,7 @@ export const GalleryContent = async () => {
 					))}
 				</div>
 
-				<Card className="bg-slate-800 border-slate-700 mt-8 hover:bg-slate-700 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/20">
+				<Card className=" bg-slate-800 border-slate-700 mt-8 hover:bg-slate-700 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/20">
 					<CardContent className="p-8 text-center">
 						<Camera className="h-12 w-12 text-sky-400 mx-auto mb-4 animate-pulse" />
 						<h3 className="font-bold text-xl mb-4">

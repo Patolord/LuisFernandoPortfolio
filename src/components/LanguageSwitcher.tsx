@@ -1,6 +1,6 @@
 "use client";
 
-import { Languages } from "lucide-react";
+import { BR, GB } from "country-flag-icons/react/3x2";
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -26,11 +26,11 @@ export default function LanguageSwitcher({
 	const getLanguageInfo = (locale: Locale) => {
 		switch (locale) {
 			case "en":
-				return { label: "EN", flag: "🇺🇸", name: "English" };
+				return { label: "EN", flag: GB, name: "English" };
 			case "pt-BR":
-				return { label: "PT", flag: "🇧🇷", name: "Português" };
+				return { label: "PT", flag: BR, name: "Português" };
 			default:
-				return { label: "EN", flag: "🇺🇸", name: "English" };
+				return { label: "EN", flag: GB, name: "English" };
 		}
 	};
 
@@ -42,25 +42,41 @@ export default function LanguageSwitcher({
 	const otherLanguageInfo = getLanguageInfo(otherLocale);
 	const currentLanguageInfo = getLanguageInfo(currentLocale);
 
+	const FlagIcon = currentLanguageInfo.flag;
+	const OtherFlagIcon = otherLanguageInfo.flag;
+
 	return (
 		<div className="flex items-center gap-2">
-			{/* Current language indicator */}
-			<div className="flex items-center gap-1 text-slate-400 text-sm">
-				<span>{currentLanguageInfo.flag}</span>
-				<span>{currentLanguageInfo.label}</span>
-			</div>
-
-			{/* Language switcher button */}
+			{/* English side - always on the left */}
 			<Button
-				variant="outline"
+				variant="ghost"
 				size="sm"
-				onClick={() => switchLanguage(otherLocale)}
-				className="flex items-center gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white transition-all duration-200"
-				title={`Switch to ${otherLanguageInfo.name}`}
+				onClick={() => switchLanguage("en")}
+				className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 ${
+					currentLocale === "en"
+						? "bg-slate-800 border border-slate-600 text-slate-200"
+						: "text-slate-400 hover:text-slate-200 hover:bg-slate-700"
+				}`}
+				title="Switch to English"
 			>
-				<Languages className="h-4 w-4" />
-				<span>{otherLanguageInfo.flag}</span>
-				<span>{otherLanguageInfo.label}</span>
+				<GB className="w-4 h-3" />
+				<span>EN</span>
+			</Button>
+
+			{/* Portuguese side - always on the right */}
+			<Button
+				variant="ghost"
+				size="sm"
+				onClick={() => switchLanguage("pt-BR")}
+				className={`flex items-center gap-2 transition-all duration-200 ${
+					currentLocale === "pt-BR"
+						? "bg-slate-800 border border-slate-600 text-slate-200 hover:bg-slate-700"
+						: "text-slate-400 hover:text-slate-200 hover:bg-slate-700"
+				}`}
+				title="Switch to Portuguese"
+			>
+				<BR className="w-4 h-3" />
+				<span>PT</span>
 			</Button>
 		</div>
 	);
