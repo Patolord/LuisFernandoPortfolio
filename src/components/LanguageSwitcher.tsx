@@ -42,8 +42,8 @@ export default function LanguageSwitcher({
 	const otherLanguageInfo = getLanguageInfo(otherLocale);
 	const currentLanguageInfo = getLanguageInfo(currentLocale);
 
-	const FlagIcon = currentLanguageInfo.flag;
-	const OtherFlagIcon = otherLanguageInfo.flag;
+	const _FlagIcon = currentLanguageInfo.flag;
+	const _OtherFlagIcon = otherLanguageInfo.flag;
 
 	return (
 		<div className="flex items-center gap-2">

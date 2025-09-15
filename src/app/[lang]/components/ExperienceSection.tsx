@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import { Badge } from "@/components/ui/badge";
-import ParticleBackground from "./ParticleBackground";
 
 interface ExperienceItem {
 	period: string;

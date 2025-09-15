@@ -107,6 +107,9 @@
 		"location": "Localização",
 		"downloadResume": "Baixar Currículo"
 	},
+	"clients": {
+		"trustedBy": "Confiança de Grandes Empresas da Aviação"
+	},
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Portfólio de Soluções em Engenharia Aeronáutica."
 	},

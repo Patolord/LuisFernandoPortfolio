@@ -14,7 +14,7 @@ export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
 
 	return (
 		<nav className="fixed top-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
-			<div className="max-w-6xl mx-auto px-6">
+			<div className="w-full px-6 lg:px-12 xl:px-16 2xl:px-24">
 				<div className="flex items-center justify-between h-16">
 					<div className="flex items-center gap-4 flex-1 min-w-0">
 						<Image

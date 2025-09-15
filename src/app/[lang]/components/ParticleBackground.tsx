@@ -80,7 +80,7 @@ export const ParticleBackground = () => {
 		);
 	}
 
-	return <></>;
+	return null;
 };
 
 export default ParticleBackground;

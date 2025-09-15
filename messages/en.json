@@ -107,6 +107,9 @@
 		"location": "Location",
 		"downloadResume": "Download Resume"
 	},
+	"clients": {
+		"trustedBy": "Trusted by Leading Aviation Companies"
+	},
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Aviation Engineering Solutions Portfolio."
 	},
