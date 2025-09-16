@@ -16,7 +16,7 @@ export const HeroTransition = ({
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowContent(true);
-		}, 800); // 0.8 seconds
+		}, 120); // 0.2 seconds
 
 		return () => clearTimeout(timer);
 	}, []);
