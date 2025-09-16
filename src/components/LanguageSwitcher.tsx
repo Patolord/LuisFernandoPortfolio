@@ -2,7 +2,6 @@
 
 import { BR, GB } from "country-flag-icons/react/3x2";
 import { usePathname, useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
 
 type Locale = "en" | "pt-BR";
 
@@ -56,6 +55,7 @@ export default function LanguageSwitcher({
 
 			{/* English option */}
 			<button
+				type="button"
 				onClick={() => switchLanguage("en")}
 				className={`relative z-10 flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium transition-colors duration-200 ${
 					currentLocale === "en"
@@ -70,6 +70,7 @@ export default function LanguageSwitcher({
 
 			{/* Portuguese option */}
 			<button
+				type="button"
 				onClick={() => switchLanguage("pt-BR")}
 				className={`relative z-10 flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium transition-colors duration-200 ${
 					currentLocale === "pt-BR"

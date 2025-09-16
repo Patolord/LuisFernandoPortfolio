@@ -56,7 +56,6 @@ export const GalleryContent = async () => {
 			desc: t("items.fieldOperations.description"),
 			delay: "0.7s",
 		},
-		
 	];
 
 	return (

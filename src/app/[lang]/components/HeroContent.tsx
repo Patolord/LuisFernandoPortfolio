@@ -1,12 +1,8 @@
-import { Award, ChevronDown, Clock, Wrench } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
 import { ClientCarousel } from "./ClientCarousel";
-import { HeroButtons } from "./HeroButtons";
-import ParticleBackground from "./ParticleBackground";
 
 export const HeroContent = async () => {
-	const t = await getTranslations("hero");
 	return (
 		<section className="pt-20 pb-16 relative overflow-hidden min-h-screen flex items-center">
 			{/* Background Image */}
@@ -19,7 +15,6 @@ export const HeroContent = async () => {
 					priority
 				/>
 			</div>
-
 
 			{/* Client Carousel */}
 			<div className="absolute bottom-0 left-0 right-0">
