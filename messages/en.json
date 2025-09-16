@@ -112,6 +112,16 @@
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Aviation Engineering Solutions Portfolio."
 	},
+	"mission": {
+		"title": "Company Mission",
+		"description": "Our mission is to provide aviation engineering consulting services with excellence, transparency, and complete commitment to our clients' success.",
+		"items": [
+			"Deliver the best service at a fair price in the shortest possible time, avoiding additional costs",
+			"Ensure the quality of the service to be delivered and maintain the highest level of available information regarding all aspects of the work performed",
+			"Be fully transparent regarding the implicit expenses involved in the service to be provided",
+			"Maintain total availability and flexibility to meet needs wherever and whenever necessary"
+		]
+	},
 	"gallery": {
 		"title": "Real Results Gallery",
 		"description": "Images from actual inspections, audits, and maintenance environments across major commercial platforms.",
