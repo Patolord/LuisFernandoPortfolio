@@ -34,7 +34,7 @@ export const HeroTransition = ({
 
 			{/* Hero content with fade-in animation */}
 			<div
-				className={`w-full relative z-10 px-6 lg:px-12 xl:px-16 2xl:px-24 transition-all duration-1500 ease-out ${
+				className={`w-full h-full relative z-10 flex flex-col justify-between transition-all duration-1500 ease-out ${
 					showContent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
 				}`}
 			>

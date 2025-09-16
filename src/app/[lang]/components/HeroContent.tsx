@@ -2,25 +2,25 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ClientCarousel } from "./ClientCarousel";
+import { HeroTransition } from "./HeroTransition";
 
 export const HeroContent = () => {
 	const t = useTranslations("hero");
 
-	return (
-		<section className="pt-20 pb-16 relative overflow-hidden min-h-screen flex flex-col justify-between">
-			{/* Background Image */}
-			<div className="absolute inset-0">
-				<Image
-					src="/images/hero.jpeg"
-					alt="Professional aviation environment"
-					fill
-					className="object-cover"
-					priority
-				/>
-			</div>
+	const backgroundImage = (
+		<Image
+			src="/images/hero.jpeg"
+			alt="Professional aviation environment"
+			fill
+			className="object-cover"
+			priority
+		/>
+	);
 
+	const heroContent = (
+		<>
 			{/* Title at the top */}
-			<div className="relative z-10 text-center text-white pt-16 px-6">
+			<div className="text-center text-white pt-16 px-6">
 				<h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
 					{t("title")}
 					<br />
@@ -31,7 +31,7 @@ export const HeroContent = () => {
 			</div>
 
 			{/* Description and content in the middle */}
-			<div className="relative z-10 text-center text-white px-6 flex-1 flex flex-col justify-center mt-16">
+			<div className="text-center text-white px-6 flex-1 flex flex-col justify-center mt-56">
 				<p className="text-base md:text-lg lg:text-xl mb-12 max-w-4xl mx-auto leading-relaxed text-gray-200">
 					{t("description")}
 				</p>
@@ -74,6 +74,15 @@ export const HeroContent = () => {
 					</button>
 				</div>
 			</div>
+		</>
+	);
+
+	return (
+		<section className="pt-20 pb-16 relative overflow-hidden min-h-screen">
+			<HeroTransition
+				backgroundImage={backgroundImage}
+				heroContent={heroContent}
+			/>
 
 			{/* Client Carousel */}
 			<div className="absolute bottom-0 left-0 right-0">
