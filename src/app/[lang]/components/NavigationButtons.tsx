@@ -23,7 +23,7 @@ export const NavigationButtons = () => {
 					key={item.section}
 					type="button"
 					onClick={() => scrollToSection(item.section)}
-					className="text-slate-300 hover:text-sky-400 transition-colors"
+					className="text-gray-700 hover:text-sky-600 transition-colors font-medium"
 				>
 					{item.label}
 				</button>

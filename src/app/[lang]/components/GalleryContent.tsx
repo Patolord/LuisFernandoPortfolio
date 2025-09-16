@@ -56,12 +56,7 @@ export const GalleryContent = async () => {
 			desc: t("items.fieldOperations.description"),
 			delay: "0.7s",
 		},
-		{
-			src: "/images/cockpit-interior.jpg",
-			title: t("items.cockpitSystems.title"),
-			desc: t("items.cockpitSystems.description"),
-			delay: "0.8s",
-		},
+		
 	];
 
 	return (

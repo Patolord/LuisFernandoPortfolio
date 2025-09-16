@@ -13,25 +13,23 @@ export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
 	const t = useTranslations();
 
 	return (
-		<nav className="fixed top-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
-			<div className="w-full px-6 lg:px-12 xl:px-16 2xl:px-24">
-				<div className="flex items-center justify-between h-16">
+		<nav className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-6xl bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/20 z-50 transition-all duration-300 hover:shadow-xl">
+			<div className="px-6 lg:px-12 xl:px-16">
+				<div className="flex items-center justify-between h-14">
 					<div className="flex items-center gap-4 flex-1 min-w-0">
 						<Image
 							src="/images/lfs-aviation-logo-nobg.png"
 							alt="LFS Aviation Logo"
-							width={128}
-							height={128}
-							className="h-20 w-20 object-cover flex-shrink-0"
+							width={96}
+							height={96}
+							className="h-14 w-14 object-cover flex-shrink-0"
 							priority
 						/>
 						<div className="hidden 2xs:block max-w-[160px] 2xs:max-w-[200px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-none min-w-0">
-							<h1 className="font-bold text-xs 2xs:text-sm sm:text-base md:text-lg whitespace-nowrap overflow-hidden">
-								Luis Fernando dos Santos
+							<h1 className="font-bold text-xs 2xs:text-sm sm:text-base md:text-lg whitespace-nowrap overflow-hidden text-gray-900">
+								Luis Fernando
 							</h1>
-							<p className="text-xs 2xs:text-sm text-slate-400 whitespace-nowrap overflow-hidden">
-								{t("nav.slogan")}
-							</p>
+							
 						</div>
 					</div>
 					<div className="flex items-center gap-4 flex-shrink-0">

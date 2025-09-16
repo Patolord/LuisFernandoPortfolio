@@ -46,38 +46,41 @@ export default function LanguageSwitcher({
 	const _OtherFlagIcon = otherLanguageInfo.flag;
 
 	return (
-		<div className="flex items-center gap-2">
-			{/* English side - always on the left */}
-			<Button
-				variant="ghost"
-				size="sm"
+		<div className="relative inline-flex items-center bg-gray-100 rounded-lg p-0.5">
+			{/* Background slider */}
+			<div
+				className={`absolute top-0.5 bottom-0.5 w-[calc(50%-2px)] bg-sky-500 rounded-md transition-transform duration-200 ease-in-out ${
+					currentLocale === "pt-BR" ? "translate-x-full" : "translate-x-0"
+				}`}
+			/>
+
+			{/* English option */}
+			<button
 				onClick={() => switchLanguage("en")}
-				className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 ${
+				className={`relative z-10 flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium transition-colors duration-200 ${
 					currentLocale === "en"
-						? "bg-slate-800 border border-slate-600 text-slate-200"
-						: "text-slate-400 hover:text-slate-200 hover:bg-slate-700"
+						? "text-white"
+						: "text-gray-600 hover:text-gray-800"
 				}`}
 				title="Switch to English"
 			>
-				<GB className="w-4 h-3" />
+				<GB className="w-3 h-2 rounded-sm" />
 				<span>EN</span>
-			</Button>
+			</button>
 
-			{/* Portuguese side - always on the right */}
-			<Button
-				variant="ghost"
-				size="sm"
+			{/* Portuguese option */}
+			<button
 				onClick={() => switchLanguage("pt-BR")}
-				className={`flex items-center gap-2 transition-all duration-200 ${
+				className={`relative z-10 flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium transition-colors duration-200 ${
 					currentLocale === "pt-BR"
-						? "bg-slate-800 border border-slate-600 text-slate-200 hover:bg-slate-700"
-						: "text-slate-400 hover:text-slate-200 hover:bg-slate-700"
+						? "text-white"
+						: "text-gray-600 hover:text-gray-800"
 				}`}
 				title="Switch to Portuguese"
 			>
-				<BR className="w-4 h-3" />
+				<BR className="w-3 h-2 rounded-sm" />
 				<span>PT</span>
-			</Button>
+			</button>
 		</div>
 	);
 }
