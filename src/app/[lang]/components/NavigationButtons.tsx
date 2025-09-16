@@ -10,7 +10,7 @@ export const NavigationButtons = () => {
 	};
 
 	const navigationItems = [
-		{ label: t("about"), section: "about" },
+		{ label: t("mission"), section: "mission" },
 		{ label: t("experience"), section: "experience" },
 		{ label: t("expertise"), section: "expertise" },
 		{ label: t("contact"), section: "contact" },

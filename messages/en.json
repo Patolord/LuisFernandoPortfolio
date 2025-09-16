@@ -1,6 +1,6 @@
 {
 	"nav": {
-		"about": "About",
+		"mission": "Mission",
 		"experience": "Experience",
 		"expertise": "Expertise",
 		"contact": "Contact"
@@ -114,7 +114,7 @@
 	},
 	"mission": {
 		"title": "Company Mission",
-		"description": "Our mission is to provide aviation engineering consulting services with excellence, transparency, and complete commitment to our clients' success.",
+		"description": "",
 		"items": [
 			"Deliver the best service at a fair price in the shortest possible time, avoiding additional costs",
 			"Ensure the quality of the service to be delivered and maintain the highest level of available information regarding all aspects of the work performed",

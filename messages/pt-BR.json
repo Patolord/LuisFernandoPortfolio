@@ -1,6 +1,6 @@
 {
 	"nav": {
-		"about": "Sobre",
+		"mission": "Missão",
 		"experience": "Experiência",
 		"expertise": "Especialidades",
 		"contact": "Contato"
@@ -114,7 +114,7 @@
 	},
 	"mission": {
 		"title": "Missão da Empresa",
-		"description": "Nossa missão é fornecer serviços de consultoria em engenharia aeronáutica com excelência, transparência e total comprometimento com os resultados dos nossos clientes.",
+		"description": "",
 		"items": [
 			"Entregar o melhor serviço pelo preço justo no menor tempo possível evitando custos adicionais",
 			"Garantir a qualidade do serviço a ser entregue e manter o mais alto nível da informação disponível de tudo referente ao serviço realizado",
