@@ -8,13 +8,14 @@ export const HeroContent = () => {
 	const t = useTranslations("hero");
 
 	const backgroundImage = (
-		<Image
-			src="/images/hero.webp"
-			alt="Professional aviation environment"
-			fill
-			className="object-cover"
-			priority
-		/>
+		<picture>
+			<source srcSet="/images/hero.webp" type="image/webp" />
+			<img
+				src="/images/aircraft-landing-hero.jpeg"
+				alt="Professional aviation environment"
+				className="absolute inset-0 w-full h-full object-cover"
+			/>
+		</picture>
 	);
 
 	const heroContent = (
