@@ -42,37 +42,31 @@
 			"deliveryAuditor": {
 				"title": "Auditor de Documentos de Entrega",
 				"company": "Eirtech / JetBlue",
-				"period": "Mar 2023 - Mar 2025",
 				"description": "Conduzi auditorias de registros (ADs, SBs, APU) em aeronaves E195, garantindo aceitação suave e total conformidade regulatória."
 			},
 			"lessorRep": {
 				"title": "Representante de Lessor",
 				"company": "SkyOn / Azul",
-				"period": "Nov 2023 - Fev 2024",
 				"description": "Liderei inspeção completa de redelivery e auditoria de registros do E195, superando os requisitos do lessor."
 			},
 			"northCompass": {
 				"title": "Representante de Lessor",
 				"company": "North Compass / Avelo",
-				"period": "Abr 2023 - Jul 2023",
 				"description": "Entreguei projeto de redelivery do B737-800, incluindo auditorias de documentação OCCM e HT."
 			},
 			"pcaAirworthiness": {
 				"title": "Gerente de Projeto / Auditor",
 				"company": "PCA Airworthiness",
-				"period": "Jun 2019 - Jul 2021",
 				"description": "Gerenciei redelivery de B737-700 e realizei inspeções/auditorias de entrega em aeronaves da família A320 e motores CFM56."
 			},
 			"engineer": {
 				"title": "Engenheiro",
 				"company": "Avianca Brasil",
-				"period": "Abr 2014 - Jun 2019",
 				"description": "Planejei e executei checks pesados e redeliveries (A320/A330), coordenando devoluções para grandes lessors (ex.: GECAS, JSA, MCAP, McLarens, ACG)."
 			},
 			"systemsEngineer": {
 				"title": "Engenheiro de Sistemas",
 				"company": "TAM Airlines",
-				"period": "Ago 2008 - Abr 2014",
 				"description": "Gerenciei MEL e programas de manutenção, atuei como liaison técnico com OEMs, aprovei materiais PMA e integrei o ATR-42 à frota TAM."
 			}
 		}
