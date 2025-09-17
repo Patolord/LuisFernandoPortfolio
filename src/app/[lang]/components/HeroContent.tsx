@@ -9,7 +9,7 @@ export const HeroContent = () => {
 
 	const backgroundImage = (
 		<Image
-			src="/images/hero.jpeg"
+			src="/images/hero.webp"
 			alt="Professional aviation environment"
 			fill
 			className="object-cover"
