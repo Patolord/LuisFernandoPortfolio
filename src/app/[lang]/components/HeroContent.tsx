@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { Button } from "@/components/ui/button";
 import { ClientCarouselContent } from "./ClientCarouselContent";
 import { HeroTransition } from "./HeroTransition";
 
@@ -61,18 +62,19 @@ export const HeroContent = async () => {
 
 				{/* CTA Buttons */}
 				<div className="flex flex-col sm:flex-row gap-4 justify-center">
-					<button
-						type="button"
+					<Button
+						size="lg"
 						className="px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
 					>
 						{t("getFreeConsultation")}
-					</button>
-					<button
-						type="button"
+					</Button>
+					<Button
+						variant="outline"
+						size="lg"
 						className="px-8 py-4 border-2 border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white font-semibold rounded-lg transition-all duration-300"
 					>
 						{t("getFreeConsultation")}
-					</button>
+					</Button>
 				</div>
 			</div>
 		</>
