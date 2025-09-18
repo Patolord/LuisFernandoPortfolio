@@ -1,10 +1,6 @@
 "use client";
 
-interface Client {
-	name: string;
-	logo: string;
-	alt: string;
-}
+import type { Client } from "./ClientCarouselContent";
 
 interface ClientCarouselClientProps {
 	clients: Client[];

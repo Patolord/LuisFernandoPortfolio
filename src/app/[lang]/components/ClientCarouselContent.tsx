@@ -1,7 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import { ClientCarouselClient } from "./ClientCarousel";
 
-const clients = [
+export interface Client {
+	name: string;
+	logo: string;
+	alt: string;
+}
+
+const clients: Client[] = [
 	{
 		name: "JetBlue",
 		logo: "/images/clients/jetblue-logo.png",
