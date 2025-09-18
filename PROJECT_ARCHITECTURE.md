@@ -176,7 +176,7 @@ export default async function Page({ params }) {
 // dictionaries/en.json
 {
   "hero.title": "Aviation Engineering Consultant",
-  "hero.description": "18+ years experience..."
+  "hero.description": "20+ years experience..."
 }
 ```
 

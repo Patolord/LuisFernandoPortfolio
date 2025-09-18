@@ -1,14 +1,18 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { useId } from "react";
 import { Button } from "@/components/ui/button";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
-export const ContactButton = () => {
+interface ContactButtonClientProps {
+	downloadResumeText: string;
+}
+
+export const ContactButtonClient = ({
+	downloadResumeText,
+}: ContactButtonClientProps) => {
 	const buttonId = useId();
 	const isVisible = useIntersectionObserver();
-	const t = useTranslations("contact");
 
 	const handleDownloadResume = () => {
 		// Create a link element to trigger the download
@@ -35,7 +39,7 @@ export const ContactButton = () => {
 				onClick={handleDownloadResume}
 				className="bg-sky-600 hover:bg-sky-700 text-white transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/25"
 			>
-				{t("downloadResume")}
+				{downloadResumeText}
 			</Button>
 		</div>
 	);

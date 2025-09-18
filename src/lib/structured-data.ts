@@ -9,9 +9,9 @@ export const createStructuredData = (lang: "en" | "pt-BR") => {
 	};
 
 	const descriptions = {
-		en: "Experienced aviation engineer with 18+ years in commercial aircraft maintenance, redelivery projects, and technical consultancy.",
+		en: "Experienced aviation engineer with 20+ years in commercial aircraft maintenance, redelivery projects, and technical consultancy.",
 		"pt-BR":
-			"Engenheiro aeronáutico experiente com mais de 18 anos em manutenção de aeronaves comerciais, projetos de redelivery e consultoria técnica.",
+			"Engenheiro aeronáutico experiente com mais de 20 anos em manutenção de aeronaves comerciais, projetos de redelivery e consultoria técnica.",
 	};
 
 	return {
@@ -69,8 +69,8 @@ export const createStructuredData = (lang: "en" | "pt-BR") => {
 					? "Experiência Profissional"
 					: "Professional Experience",
 				description: isPortuguese
-					? "Mais de 18 anos em manutenção de aeronaves comerciais e consultoria"
-					: "18+ years in commercial aircraft maintenance and consultancy",
+					? "Mais de 20 anos em manutenção de aeronaves comerciais e consultoria"
+					: "20+ years in commercial aircraft maintenance and consultancy",
 			},
 		],
 		workExample: [

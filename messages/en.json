@@ -1,16 +1,15 @@
 {
 	"nav": {
-		"about": "About",
+		"mission": "Mission",
 		"experience": "Experience",
 		"expertise": "Expertise",
-		"contact": "Contact",
-		"slogan": "Trusted performance for your fleet"
+		"contact": "Contact"
 	},
 	"hero": {
 		"title": "Aviation Engineering ",
 		"subtitle": "that Delivers Results",
-		"description": "Trusted by airlines and leasing companies worldwide, I reduce operational risk, secure 100% compliance, and ensure smooth fleet transitions across Airbus, Boeing, Embraer, ATR, and Fokker platforms.",
-		"yearsExperience": "18+ Years Delivering Results",
+		"description": "Trusted by airlines and leasing companies worldwide, I reduce operational risk, secure 100% compliance.",
+		"yearsExperience": "20+ Years Delivering Results",
 		"location": "São José dos Campos, SP",
 		"multiPlatform": "Expertise Across Airbus, Boeing, Embraer, ATR & Fokker",
 		"viewExperience": "View Track Record",
@@ -31,7 +30,7 @@
 			"majorAirlines": "Major Airlines Served"
 		},
 		"counters": {
-			"years": "18+",
+			"years": "20+",
 			"projects": "50+",
 			"types": "8",
 			"airlines": "15+"
@@ -107,8 +106,21 @@
 		"location": "Location",
 		"downloadResume": "Download Resume"
 	},
+	"clients": {
+		"trustedBy": "Trusted by Leading Aviation Companies"
+	},
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Aviation Engineering Solutions Portfolio."
+	},
+	"mission": {
+		"title": "Company Mission",
+		"description": "",
+		"items": [
+			"Deliver the best service at a fair price in the shortest possible time, avoiding additional costs",
+			"Ensure the quality of the service to be delivered and maintain the highest level of available information regarding all aspects of the work performed",
+			"Be fully transparent regarding the implicit expenses involved in the service to be provided",
+			"Maintain total availability and flexibility to meet needs wherever and whenever necessary"
+		]
 	},
 	"gallery": {
 		"title": "Real Results Gallery",
@@ -148,7 +160,7 @@
 			}
 		},
 		"experienceCard": {
-			"title": "18+ Years of Delivering Results",
+			"title": "20+ Years of Delivering Results",
 			"description": "Selected projects across Airbus, Boeing, Embraer, ATR, and Fokker—demonstrating compliance, documentation rigor, and on-time delivery for airlines and lessors."
 		}
 	}

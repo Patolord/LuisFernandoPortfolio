@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
 		name: "Luis Fernando dos Santos - Aviation Engineering Consultant",
 		short_name: "Luis Fernando Portfolio",
 		description:
-			"Experienced aviation engineer with 18+ years in commercial aircraft maintenance, redelivery projects, and technical consultancy.",
+			"Experienced aviation engineer with 20+ years in commercial aircraft maintenance, redelivery projects, and technical consultancy.",
 		start_url: "/",
 		display: "standalone",
 		background_color: "#0f172a",

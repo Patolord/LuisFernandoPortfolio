@@ -84,8 +84,8 @@ export default async function Image({
 				}}
 			>
 				{lang === "pt-BR"
-					? "18+ Anos de Experiência em Aviação Comercial"
-					: "18+ Years Experience in Commercial Aviation"}
+					? "20+ Anos de Experiência em Aviação Comercial"
+					: "20+ Years Experience in Commercial Aviation"}
 			</div>
 		</div>,
 		{

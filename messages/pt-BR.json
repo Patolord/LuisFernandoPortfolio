@@ -1,16 +1,15 @@
 {
 	"nav": {
-		"about": "Sobre",
+		"mission": "Missão",
 		"experience": "Experiência",
 		"expertise": "Especialidades",
-		"contact": "Contato",
-		"slogan": "Confiança e performance para sua frota"
+		"contact": "Contato"
 	},
 	"hero": {
 		"title": "Engenharia Aeronáutica",
-		"subtitle": "que Gera Resultados",
-		"description": "Confiado por companhias aéreas e empresas de leasing em todo o mundo, reduzo riscos operacionais, asseguro 100% de conformidade regulatória e garanto transições de frota sem interrupções em plataformas Airbus, Boeing, Embraer, ATR e Fokker.",
-		"yearsExperience": "18+ Anos de Resultados",
+		"subtitle": " que Gera Resultados",
+		"description": "Confiado por companhias aéreas e empresas de leasing em todo o mundo, reduzo riscos operacionais, asseguro 100% de conformidade regulatória.",
+		"yearsExperience": "20+ Anos de Resultados",
 		"location": "São José dos Campos, SP",
 		"multiPlatform": "Expertise em Airbus, Boeing, Embraer, ATR & Fokker",
 		"viewExperience": "Ver Histórico",
@@ -31,7 +30,7 @@
 			"majorAirlines": "Grandes Companhias Aéreas Atendidas"
 		},
 		"counters": {
-			"years": "18+",
+			"years": "20+",
 			"projects": "50+",
 			"types": "8",
 			"airlines": "15+"
@@ -43,37 +42,31 @@
 			"deliveryAuditor": {
 				"title": "Auditor de Documentos de Entrega",
 				"company": "Eirtech / JetBlue",
-				"period": "Mar 2023 - Mar 2025",
 				"description": "Conduzi auditorias de registros (ADs, SBs, APU) em aeronaves E195, garantindo aceitação suave e total conformidade regulatória."
 			},
 			"lessorRep": {
 				"title": "Representante de Lessor",
 				"company": "SkyOn / Azul",
-				"period": "Nov 2023 - Fev 2024",
 				"description": "Liderei inspeção completa de redelivery e auditoria de registros do E195, superando os requisitos do lessor."
 			},
 			"northCompass": {
 				"title": "Representante de Lessor",
 				"company": "North Compass / Avelo",
-				"period": "Abr 2023 - Jul 2023",
 				"description": "Entreguei projeto de redelivery do B737-800, incluindo auditorias de documentação OCCM e HT."
 			},
 			"pcaAirworthiness": {
 				"title": "Gerente de Projeto / Auditor",
 				"company": "PCA Airworthiness",
-				"period": "Jun 2019 - Jul 2021",
 				"description": "Gerenciei redelivery de B737-700 e realizei inspeções/auditorias de entrega em aeronaves da família A320 e motores CFM56."
 			},
 			"engineer": {
 				"title": "Engenheiro",
 				"company": "Avianca Brasil",
-				"period": "Abr 2014 - Jun 2019",
 				"description": "Planejei e executei checks pesados e redeliveries (A320/A330), coordenando devoluções para grandes lessors (ex.: GECAS, JSA, MCAP, McLarens, ACG)."
 			},
 			"systemsEngineer": {
 				"title": "Engenheiro de Sistemas",
 				"company": "TAM Airlines",
-				"period": "Ago 2008 - Abr 2014",
 				"description": "Gerenciei MEL e programas de manutenção, atuei como liaison técnico com OEMs, aprovei materiais PMA e integrei o ATR-42 à frota TAM."
 			}
 		}
@@ -107,8 +100,21 @@
 		"location": "Localização",
 		"downloadResume": "Baixar Currículo"
 	},
+	"clients": {
+		"trustedBy": "Confiança de Grandes Empresas da Aviação"
+	},
 	"footer": {
 		"copyright": "© 2024 Luis Fernando dos Santos. Portfólio de Soluções em Engenharia Aeronáutica."
+	},
+	"mission": {
+		"title": "Missão da Empresa",
+		"description": "",
+		"items": [
+			"Entregar o melhor serviço pelo preço justo no menor tempo possível evitando custos adicionais",
+			"Garantir a qualidade do serviço a ser entregue e manter o mais alto nível da informação disponível de tudo referente ao serviço realizado",
+			"Ser totalmente transparente referente aos gastos implícitos no serviço a ser prestado",
+			"Ter disponibilidade total e flexibilidade para atender aonde e quando for necessário a todo momento"
+		]
 	},
 	"gallery": {
 		"title": "Galeria de Resultados Reais",
@@ -148,7 +154,7 @@
 			}
 		},
 		"experienceCard": {
-			"title": "18+ Anos de Experiência",
+			"title": "20+ Anos de Experiência",
 			"description": "Projetos selecionados em Airbus, Boeing, Embraer, ATR e Fokker — demonstrando conformidade, rigor documental e entregas no prazo para companhias aéreas e lessors."
 		}
 	}

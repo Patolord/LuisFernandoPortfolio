@@ -1,9 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Badge } from "@/components/ui/badge";
-import ParticleBackground from "./ParticleBackground";
 
 interface ExperienceItem {
-	period: string;
 	title: string;
 	company: string;
 	description: string;
@@ -16,7 +14,6 @@ export const ExperienceSection = async () => {
 
 	const experienceItems: ExperienceItem[] = [
 		{
-			period: t("jobs.deliveryAuditor.period"),
 			title: t("jobs.deliveryAuditor.title"),
 			company: t("jobs.deliveryAuditor.company"),
 			description: t("jobs.deliveryAuditor.description"),
@@ -24,7 +21,6 @@ export const ExperienceSection = async () => {
 			isLeft: false,
 		},
 		{
-			period: t("jobs.lessorRep.period"),
 			title: t("jobs.lessorRep.title"),
 			company: t("jobs.lessorRep.company"),
 			description: t("jobs.lessorRep.description"),
@@ -32,7 +28,6 @@ export const ExperienceSection = async () => {
 			isLeft: true,
 		},
 		{
-			period: t("jobs.systemsEngineer.period"),
 			title: t("jobs.systemsEngineer.title"),
 			company: t("jobs.systemsEngineer.company"),
 			description: t("jobs.systemsEngineer.description"),
@@ -40,7 +35,6 @@ export const ExperienceSection = async () => {
 			isLeft: false,
 		},
 		{
-			period: t("jobs.engineer.period"),
 			title: t("jobs.engineer.title"),
 			company: t("jobs.engineer.company"),
 			description: t("jobs.engineer.description"),
@@ -58,15 +52,13 @@ export const ExperienceSection = async () => {
 
 					<div className="space-y-16">
 						{experienceItems.map((item) => (
-							<div key={`${item.company}-${item.period}`} className="relative">
+							<div key={`${item.company}`} className="relative">
 								<div className="md:hidden text-center mb-4">
-									<div className="bg-sky-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg inline-block">
-										{item.period}
-									</div>
+									<div className="bg-sky-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg inline-block"></div>
 								</div>
 								<div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-6">
 									<div className="bg-sky-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-										{item.period}
+										{item.company}
 									</div>
 								</div>
 								<div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-16 w-4 h-4 bg-sky-400 rounded-full border-4 border-slate-900 shadow-lg shadow-sky-500/30 z-10"></div>

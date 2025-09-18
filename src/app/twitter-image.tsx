@@ -76,7 +76,7 @@ export default async function Image() {
 					color: "white",
 				}}
 			>
-				18+ Years Experience in Commercial Aviation
+				20+ Years Experience in Commercial Aviation
 			</div>
 		</div>,
 		{

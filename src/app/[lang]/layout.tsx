@@ -19,7 +19,7 @@ export async function generateMetadata({
 	};
 
 	const descriptions = {
-		en: "Experienced aviation engineer with 18+ years in commercial aircraft maintenance, redelivery projects, and technical consultancy. Specializing in Airbus, Boeing, Embraer fleet operations.",
+		en: "Experienced aviation engineer with 20+ years in commercial aircraft maintenance, redelivery projects, and technical consultancy. Specializing in Airbus, Boeing, Embraer fleet operations.",
 		"pt-BR":
 			"Engenheiro aeronáutico experiente com mais de 18 anos em manutenção de aeronaves comerciais, projetos de redelivery e consultoria técnica. Especialista em operações de frota Airbus, Boeing, Embraer.",
 	};

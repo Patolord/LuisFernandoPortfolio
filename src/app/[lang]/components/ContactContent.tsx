@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { ContactButton } from "./ContactButton";
+import { ContactButtonContent } from "./ContactButtonContent";
 
 export const ContactContent = async () => {
 	const t = await getTranslations("contact");
@@ -40,7 +40,7 @@ export const ContactContent = async () => {
 						);
 					})}
 				</div>
-				<ContactButton />
+				<ContactButtonContent />
 			</div>
 		</section>
 	);
