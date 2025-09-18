@@ -1,11 +1,11 @@
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { ClientCarousel } from "./ClientCarousel";
+import { getTranslations } from "next-intl/server";
+import { ClientCarouselContent } from "./ClientCarouselContent";
 import { HeroTransition } from "./HeroTransition";
 
-export const HeroContent = () => {
-	const t = useTranslations("hero");
+export const HeroContent = async () => {
+	const t = await getTranslations("hero");
 
 	const backgroundImage = (
 		<picture>
@@ -87,7 +87,7 @@ export const HeroContent = () => {
 
 			{/* Client Carousel */}
 			<div className="absolute bottom-0 left-0 right-0">
-				<ClientCarousel />
+				<ClientCarouselContent />
 			</div>
 
 			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">

@@ -1,69 +1,26 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+interface Client {
+	name: string;
+	logo: string;
+	alt: string;
+}
 
-const clients = [
-	{
-		name: "JetBlue",
-		logo: "/images/clients/jetblue-logo.png",
-		alt: "JetBlue Airways",
-	},
-	{
-		name: "Eirtech",
-		logo: "/images/clients/eirtech-logo.png",
-		alt: "Eirtech Aviation Services",
-	},
-	{
-		name: "SkyOn",
-		logo: "/images/clients/skyon-logo.png",
-		alt: "SkyOn Aviation Leasing",
-	},
-	{
-		name: "Azul",
-		logo: "/images/clients/azul-logo.png",
-		alt: "Azul Brazilian Airlines",
-	},
-	{
-		name: "North Compass",
-		logo: "/images/clients/north-compass-logo.png",
-		alt: "North Compass Aviation",
-	},
-	{
-		name: "Avelo Airlines",
-		logo: "/images/clients/avelo-logo.png",
-		alt: "Avelo Airlines",
-	},
-	{
-		name: "PCA Airworthiness",
-		logo: "/images/clients/pca-logo.png",
-		alt: "PCA Airworthiness",
-	},
-	{
-		name: "Avianca Brasil",
-		logo: "/images/clients/avianca-logo.png",
-		alt: "Avianca Brasil",
-	},
-	{
-		name: "TAM Airlines",
-		logo: "/images/clients/tam-logo.png",
-		alt: "TAM Airlines",
-	},
-	{
-		name: "GECAS",
-		logo: "/images/clients/gecas-logo.png",
-		alt: "GECAS Leasing",
-	},
-];
+interface ClientCarouselClientProps {
+	clients: Client[];
+	trustedByText: string;
+}
 
-export const ClientCarousel = () => {
-	const t = useTranslations("clients");
-
+export const ClientCarouselClient = ({
+	clients,
+	trustedByText,
+}: ClientCarouselClientProps) => {
 	return (
 		<div className="w-full py-6 bg-slate-900/70 backdrop-blur-sm border-t border-slate-800">
 			<div className="w-full px-6 lg:px-12 xl:px-16 2xl:px-24">
 				<div className="text-center mb-6">
 					<p className="text-slate-400 text-xs font-medium uppercase tracking-wider">
-						{t("trustedBy")}
+						{trustedByText}
 					</p>
 				</div>
 

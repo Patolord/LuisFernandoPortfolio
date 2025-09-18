@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { NavigationButtons } from "./NavigationButtons";
+import { NavigationButtonsContent } from "./NavigationButtonsContent";
 
 interface NavigationBarProps {
 	currentLocale: "en" | "pt-BR";
@@ -29,7 +29,7 @@ export const NavigationBar = ({ currentLocale }: NavigationBarProps) => {
 						</div>
 					</div>
 					<div className="flex items-center gap-4 flex-shrink-0">
-						<NavigationButtons />
+						<NavigationButtonsContent />
 						<LanguageSwitcher currentLocale={currentLocale} />
 					</div>
 				</div>

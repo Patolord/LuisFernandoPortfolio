@@ -1,24 +1,25 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+interface NavigationItem {
+	label: string;
+	section: string;
+}
 
-export const NavigationButtons = () => {
-	const t = useTranslations("nav");
+interface NavigationButtonsClientProps {
+	items: NavigationItem[];
+}
+
+export const NavigationButtonsClient = ({
+	items,
+}: NavigationButtonsClientProps) => {
 	const scrollToSection = (sectionName: string) => {
 		const section = document.querySelector(`[data-section="${sectionName}"]`);
 		section?.scrollIntoView({ behavior: "smooth" });
 	};
 
-	const navigationItems = [
-		{ label: t("mission"), section: "mission" },
-		{ label: t("experience"), section: "experience" },
-		{ label: t("expertise"), section: "expertise" },
-		{ label: t("contact"), section: "contact" },
-	];
-
 	return (
 		<div className="hidden md:flex items-center gap-6">
-			{navigationItems.map((item) => (
+			{items.map((item) => (
 				<button
 					key={item.section}
 					type="button"
