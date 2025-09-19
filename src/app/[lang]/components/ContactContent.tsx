@@ -1,6 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { ContactButtonContent } from "./ContactButtonContent";
 
 export const ContactContent = async () => {
 	const t = await getTranslations("contact");
@@ -28,7 +27,7 @@ export const ContactContent = async () => {
 			<div className="max-w-4xl mx-auto text-center">
 				<h2 className="text-3xl font-bold mb-8">{t("title")}</h2>
 				<p className="text-xl text-slate-300 mb-12">{t("description")}</p>
-				<div className="grid md:grid-cols-3 gap-8 mb-12">
+				<div className="grid md:grid-cols-3 gap-8">
 					{contactInfo.map((contact) => {
 						const IconComponent = contact.icon;
 						return (
@@ -40,7 +39,6 @@ export const ContactContent = async () => {
 						);
 					})}
 				</div>
-				<ContactButtonContent />
 			</div>
 		</section>
 	);
