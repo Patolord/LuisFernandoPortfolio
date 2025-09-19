@@ -7,6 +7,8 @@ import { HeroTransition } from "./HeroTransition";
 export const HeroContent = async () => {
 	const t = await getTranslations("hero");
 
+	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent("Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades profissionais.")}`;
+
 	const backgroundImage = (
 		<picture>
 			<source srcSet="/images/hero.webp" type="image/webp" />
@@ -61,19 +63,23 @@ export const HeroContent = async () => {
 
 				{/* CTA Buttons */}
 				<div className="flex flex-col sm:flex-row gap-4 justify-center">
-					<Button
-						size="lg"
-						className="px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
-					>
-						{t("getFreeConsultation")}
-					</Button>
-					<Button
-						variant="outline"
-						size="lg"
-						className="px-8 py-4 border-2 border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white font-semibold rounded-lg transition-all duration-300"
-					>
-						{t("getFreeConsultation")}
-					</Button>
+					<a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+						<Button
+							size="lg"
+							className="px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+						>
+							{t("getFreeConsultation")}
+						</Button>
+					</a>
+					<a href="#expertise">
+						<Button
+							variant="outline"
+							size="lg"
+							className="px-8 py-4 border-2 border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white font-semibold rounded-lg transition-all duration-300"
+						>
+							{t("viewTrackRecord")}
+						</Button>
+					</a>
 				</div>
 			</div>
 		</>

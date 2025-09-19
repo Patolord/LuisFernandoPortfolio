@@ -1,6 +1,5 @@
 import { ArrowDown, Award, FileText, Plane, Wrench } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { useId } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const aircraftTypes = [
@@ -16,7 +15,6 @@ const engineTypes = ["CFM56", "LEAP-1A", "V2500"];
 
 export const TechnicalExpertiseSection = async () => {
 	const t = await getTranslations("expertise");
-	const gradientId = useId();
 	const specializations = [
 		{
 			icon: FileText,
