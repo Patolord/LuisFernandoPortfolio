@@ -24,13 +24,7 @@ export const HeroTransition = ({
 	return (
 		<>
 			{/* Background image with transition */}
-			<div
-				className={`absolute inset-0 transition-opacity duration-2000 ease-in-out ${
-					showContent ? "opacity-30" : "opacity-100"
-				}`}
-			>
-				{backgroundImage}
-			</div>
+			<div className="absolute inset-0">{backgroundImage}</div>
 
 			{/* Hero content with fade-in animation */}
 			<div
