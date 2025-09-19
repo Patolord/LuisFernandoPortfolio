@@ -1,5 +1,4 @@
 import { ChevronDown } from "lucide-react";
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { ClientCarouselContent } from "./ClientCarouselContent";
