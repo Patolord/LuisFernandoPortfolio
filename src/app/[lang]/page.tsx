@@ -1,7 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import StructuredData from "@/components/StructuredData";
 import { ContactContent } from "./components/ContactContent";
-import { ExperienceSection } from "./components/ExperienceSection";
 import { Footer } from "./components/Footer";
 import { GalleryContent } from "./components/GalleryContent";
 import { HeroContent } from "./components/HeroContent";
@@ -42,7 +41,6 @@ export default async function AviatorPortfolio({
 				<HeroContent />
 				<MissionContent />
 				<GalleryContent />
-				<ExperienceSection />
 				<TechnicalExpertiseSection />
 				<ContactContent />
 				<Footer />
