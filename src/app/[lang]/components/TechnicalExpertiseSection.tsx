@@ -15,6 +15,7 @@ const engineTypes = ["CFM56", "LEAP-1A", "V2500"];
 
 export const TechnicalExpertiseSection = async () => {
 	const t = await getTranslations("expertise");
+	const gradientId = "technical-expertise-gradient";
 	const specializations = [
 		{
 			icon: FileText,

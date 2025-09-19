@@ -1,7 +1,7 @@
 import { Camera } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Card, CardContent } from "@/components/ui/card";
-import { GalleryCard } from "./GalleryCard";
+import { InlineGalleryCarousel } from "./InlineGalleryCarousel";
 
 interface GalleryItem {
 	src: string;
@@ -65,17 +65,7 @@ export const GalleryContent = async () => {
 					<h2 className="text-3xl font-bold mb-4">{t("title")}</h2>
 					<p className="text-slate-300 text-lg">{t("description")}</p>
 				</div>
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-					{galleryItems.map((item) => (
-						<GalleryCard
-							key={item.title}
-							src={item.src}
-							title={item.title}
-							desc={item.desc}
-							delay={item.delay}
-						/>
-					))}
-				</div>
+				<InlineGalleryCarousel items={galleryItems} />
 
 				<Card className=" bg-slate-800 border-slate-700 mt-8 hover:bg-slate-700 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/20">
 					<CardContent className="p-8 text-center">

@@ -98,7 +98,8 @@
 		"email": "Email",
 		"phone": "Telefone",
 		"location": "Localização",
-		"whatsappContact": "Entre em Contato"
+		"whatsappContact": "Entre em Contato",
+		"whatsappMessage": "Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades profissionais."
 	},
 	"clients": {
 		"trustedBy": "Confiança de Grandes Empresas da Aviação"

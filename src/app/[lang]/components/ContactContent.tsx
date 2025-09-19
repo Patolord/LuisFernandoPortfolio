@@ -23,7 +23,7 @@ export const ContactContent = async () => {
 		},
 	];
 
-	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent("Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades profissionais.")}`;
+	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent(t("whatsappMessage"))}`;
 
 	return (
 		<section className="py-16 px-6 bg-slate-900/50" data-section="contact">

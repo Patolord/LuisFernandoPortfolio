@@ -6,8 +6,9 @@ import { HeroTransition } from "./HeroTransition";
 
 export const HeroContent = async () => {
 	const t = await getTranslations("hero");
+	const tContact = await getTranslations("contact");
 
-	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent("Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades profissionais.")}`;
+	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent(tContact("whatsappMessage"))}`;
 
 	const backgroundImage = (
 		<picture>

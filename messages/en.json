@@ -104,7 +104,8 @@
 		"email": "Email",
 		"phone": "Phone",
 		"location": "Location",
-		"whatsappContact": "Contact via WhatsApp"
+		"whatsappContact": "Contact via WhatsApp",
+		"whatsappMessage": "Hello! I saw your portfolio and would like to discuss professional opportunities."
 	},
 	"clients": {
 		"trustedBy": "Trusted by Leading Aviation Companies"
