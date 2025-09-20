@@ -1,24 +1,27 @@
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { ClientCarouselContent } from "./ClientCarouselContent";
 import { HeroTransition } from "./HeroTransition";
 
 export const HeroContent = async () => {
-	const t = await getTranslations("hero");
-	const tContact = await getTranslations("contact");
+	const [t, tContact] = await Promise.all([
+		getTranslations("hero"),
+		getTranslations("contact"),
+	]);
 
 	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent(tContact("whatsappMessage"))}`;
 
 	const backgroundImage = (
-		<picture>
-			<source srcSet="/images/hero.webp" type="image/webp" />
-			<img
-				src="/images/aircraft-landing-hero.jpeg"
-				alt="Professional aviation environment"
-				className="absolute inset-0 w-full h-full object-cover"
-			/>
-		</picture>
+		<Image
+			src="/images/hero.webp"
+			alt="Professional aviation environment"
+			fill
+			className="object-cover"
+			priority
+			sizes="100vw"
+		/>
 	);
 
 	const heroContent = (
