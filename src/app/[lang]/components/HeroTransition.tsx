@@ -98,23 +98,28 @@ export const HeroTransition = ({
 
 					{/* CTA Buttons */}
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
-						<a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-							<Button
-								size="lg"
-								className="px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
-							>
-								{getFreeConsultation}
-							</Button>
-						</a>
-						<a href="#expertise">
-							<Button
-								variant="ghost"
-								size="lg"
-								className="px-8 py-4 border-2 border-sky-400 text-sky-400 hover:scale-105 font-semibold rounded-lg transition-all duration-300 hover:bg-transparent"
-							>
-								{viewTrackRecord}
-							</Button>
-						</a>
+						<Button
+							size="lg"
+							onClick={() =>
+								window.open(whatsappUrl, "_blank", "noopener,noreferrer")
+							}
+							className="px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+						>
+							{getFreeConsultation}
+						</Button>
+						<Button
+							variant="ghost"
+							size="lg"
+							onClick={() => {
+								const section = document.querySelector(
+									'[data-section="expertise"]',
+								);
+								section?.scrollIntoView({ behavior: "smooth" });
+							}}
+							className="px-8 py-4 border-2 border-sky-400 text-sky-400 hover:scale-105 font-semibold rounded-lg transition-all duration-300 hover:bg-transparent"
+						>
+							{viewTrackRecord}
+						</Button>
 					</div>
 				</div>
 			</div>
