@@ -17,7 +17,8 @@
 		"viewTrackRecord": "View Track Record",
 		"successfulProjects": "50+ Successful Projects",
 		"complianceIssues": "100% Compliance Rate",
-		"aircraftTypes": "8 Aircraft Types Supported"
+		"aircraftTypes": "8 Aircraft Types Supported",
+		"whatsappMessage": "Hello! I saw your portfolio and would like to discuss professional opportunities."
 	},
 	"about": {
 		"title": "Why Choose Me",
@@ -100,11 +101,12 @@
 	},
 	"contact": {
 		"title": "Request a Consultation",
-		"description": "Let’s discuss your aircraft redelivery, compliance, or technical operations challenges. Available for consultancy, redelivery projects, and technical advisory.",
+		"description": "Let's discuss your aircraft redelivery, compliance, or technical operations challenges. Available for consultancy, redelivery projects, and technical advisory.",
 		"email": "Email",
 		"phone": "Phone",
 		"location": "Location",
-		"downloadResume": "Download Resume"
+		"whatsappContact": "Contact via WhatsApp",
+		"whatsappMessage": "Hello! I saw your portfolio and would like to discuss professional opportunities."
 	},
 	"clients": {
 		"trustedBy": "Trusted by Leading Aviation Companies"
