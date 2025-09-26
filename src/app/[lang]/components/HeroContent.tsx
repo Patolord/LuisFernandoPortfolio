@@ -5,8 +5,9 @@ import { HeroTransition } from "./HeroTransition";
 
 export const HeroContent = async () => {
 	const t = await getTranslations("hero");
+	const contactT = await getTranslations("contact");
 
-	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent(t("whatsappMessage"))}`;
+	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent(contactT("whatsappMessage"))}`;
 
 	return (
 		<section className="pt-20 pb-16 relative overflow-hidden min-h-screen">
