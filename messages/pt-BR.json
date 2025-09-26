@@ -89,6 +89,10 @@
 			"systems": {
 				"title": "Engenharia de Sistemas",
 				"description": "Liaison técnico com OEMs, estratégias de integração de frota, otimização do planejamento de manutenção"
+			},
+			"maintenance": {
+				"title": "Manutenção",
+				"description": "Planejamento, agendamento e execução de manutenção"
 			}
 		}
 	},

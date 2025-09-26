@@ -95,6 +95,10 @@
 			"systems": {
 				"title": "Systems Engineering",
 				"description": "Technical liaison with OEMs, fleet integration strategies, maintenance planning optimization"
+			},
+			"maintenance": {
+				"title": "Maintenance",
+				"description": "Maintenance planning, scheduling, and execution"
 			}
 		}
 	},

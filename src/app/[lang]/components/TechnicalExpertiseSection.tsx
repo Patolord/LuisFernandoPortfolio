@@ -34,8 +34,8 @@ export const TechnicalExpertiseSection = async () => {
 		},
 		{
 			icon: Wrench,
-			title: t("specializations.systems.title"),
-			description: t("specializations.systems.description"),
+			title: t("specializations.maintenance.title"),
+			description: t("specializations.maintenance.description"),
 		},
 	];
 
