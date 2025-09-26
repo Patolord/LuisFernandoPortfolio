@@ -6,8 +6,8 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Aviation Engineering ",
-		"subtitle": "that Delivers Results",
+		"title": "Aviation Consulting ",
+		"subtitle": "that Delivers Trust",
 		"description": "Trusted by airlines and leasing companies worldwide, I reduce operational risk, secure 100% compliance.",
 		"yearsExperience": "20+ Years Delivering Results",
 		"location": "São José dos Campos, SP",
@@ -17,8 +17,7 @@
 		"viewTrackRecord": "View Track Record",
 		"successfulProjects": "50+ Successful Projects",
 		"complianceIssues": "100% Compliance Rate",
-		"aircraftTypes": "8 Aircraft Types Supported",
-		"whatsappMessage": "Hello! I saw your portfolio and would like to discuss professional opportunities."
+		"aircraftTypes": "8 Aircraft Types Supported"
 	},
 	"about": {
 		"title": "Why Choose Me",
@@ -83,7 +82,7 @@
 		"aircraftPlatforms": "Aircraft Platforms",
 		"engineExperience": "Engine Experience",
 		"coreSpecializations": "Core Solutions",
-		"engines": "CFM56, LEAP-1A, V2500",
+		"engines": "CFM56, LEAP-1A, V2500, CF6",
 		"specializations": {
 			"redelivery": {
 				"title": "Redelivery & Leasing Solutions",
@@ -129,32 +128,32 @@
 		"description": "Images from actual inspections, audits, and maintenance environments across major commercial platforms.",
 		"items": {
 			"golBoeing": {
-				"title": "GOL Boeing 737-800",
-				"description": "Heavy maintenance operations in professional hangar facility"
+				"title": "GOL Confins MRO",
+				"description": "Heavy Check Representative"
 			},
 			"nightOperations": {
-				"title": "Night Operations",
+				"title": "Latam A320 - Mid lease inspection",
 				"description": "Modern cockpit systems and instrumentation during night operations"
 			},
 			"azulEmbraer": {
-				"title": "Azul Embraer E195",
-				"description": "Redelivery project - SkyOn/Azul lessor representative work"
+				"title": "Azul EMB-195 on Tucson",
+				"description": "Redelivery Aircraft"
 			},
 			"maintenanceFacility": {
-				"title": "Maintenance Facility",
-				"description": "State-of-the-art hangar for comprehensive aircraft inspections"
+				"title": "Latam A320",
+				"description": "Pre-purchase inspection"
 			},
 			"technicalMaintenance": {
-				"title": "Technical Maintenance",
-				"description": "Professional maintenance environment with specialized equipment"
+				"title": "B737 on SEMAN - Peru",
+				"description": "Redelivery/Heavy Check documentation audit"
 			},
 			"regionalAircraft": {
-				"title": "Regional Aircraft",
-				"description": "Turboprop operations - diverse aircraft type experience"
+				"title": "OMNI ATR 42",
+				"description": "Turboprop Mid lease inspections"
 			},
 			"fieldOperations": {
-				"title": "Field Operations",
-				"description": "Operational aviation work on active airport tarmac"
+				"title": "Azul MRO",
+				"description": "Document Scanning"
 			},
 			"cockpitSystems": {
 				"title": "Cockpit Systems",

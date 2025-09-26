@@ -11,7 +11,7 @@ const aircraftTypes = [
 	"Fokker F-100",
 ];
 
-const engineTypes = ["CFM56", "LEAP-1A", "V2500"];
+const engineTypes = ["CFM56", "LEAP-1A", "V2500", "CF6"];
 
 export const TechnicalExpertiseSection = async () => {
 	const t = await getTranslations("expertise");
@@ -26,6 +26,11 @@ export const TechnicalExpertiseSection = async () => {
 			icon: Award,
 			title: t("specializations.certifications.title"),
 			description: t("specializations.certifications.description"),
+		},
+		{
+			icon: Wrench,
+			title: t("specializations.systems.title"),
+			description: t("specializations.systems.description"),
 		},
 		{
 			icon: Wrench,
@@ -53,7 +58,7 @@ export const TechnicalExpertiseSection = async () => {
 							<div className="w-20 h-1 bg-gradient-to-r from-sky-400 to-sky-600 mx-auto rounded-full"></div>
 						</div>
 
-						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4">
 							{aircraftTypes.map((aircraft) => (
 								<Card
 									key={aircraft}
@@ -87,7 +92,7 @@ export const TechnicalExpertiseSection = async () => {
 							<div className="w-20 h-1 bg-gradient-to-r from-sky-400 to-sky-600 mx-auto rounded-full"></div>
 						</div>
 
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+						<div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
 							{engineTypes.map((engine) => (
 								<Card
 									key={engine}
@@ -121,7 +126,7 @@ export const TechnicalExpertiseSection = async () => {
 							<div className="w-20 h-1 bg-gradient-to-r from-sky-400 to-sky-600 mx-auto rounded-full"></div>
 						</div>
 
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+						<div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 							{specializations.map((spec) => {
 								const IconComponent = spec.icon;
 								return (
