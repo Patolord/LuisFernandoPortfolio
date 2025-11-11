@@ -10,7 +10,7 @@ export const HeroContent = async () => {
 	const whatsappUrl = `https://wa.me/5512981559280?text=${encodeURIComponent(contactT("whatsappMessage"))}`;
 
 	return (
-		<section className="pt-20 pb-16 relative overflow-hidden min-h-screen">
+		<section className="relative h-screen max-h-screen overflow-hidden">
 			<HeroTransition
 				title={t("title")}
 				subtitle={t("subtitle")}
@@ -24,7 +24,7 @@ export const HeroContent = async () => {
 			/>
 
 			{/* Client Carousel */}
-			<div className="absolute bottom-0 left-0 right-0">
+			<div className="absolute bottom-0 left-0 right-0 z-30">
 				<ClientCarouselContent />
 			</div>
 
