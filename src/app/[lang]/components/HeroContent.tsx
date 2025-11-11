@@ -29,7 +29,7 @@ export const HeroContent = async () => {
 			</div>
 
 			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
-				<ChevronDown className="h-6 w-6 text-sky-400" />
+				<ChevronDown className="h-6 w-6 text-blue-900" />
 			</div>
 		</section>
 	);

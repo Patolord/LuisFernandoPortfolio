@@ -58,7 +58,7 @@ export const HeroTransition = ({
 				}`}
 			>
 				{/* Title at the top */}
-				<div className="text-center text-white pt-4 md:pt-8 px-6">
+				<div className="text-center text-white pt-12 md:pt-12 sm:pt-4 px-6">
 					<h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
 						{title}
 						<br />
@@ -69,14 +69,14 @@ export const HeroTransition = ({
 				</div>
 
 				{/* Description and content in the middle */}
-				<div className="text-center text-white px-6 flex-1 flex flex-col justify-center mt-72 md:mt-56 sm:mt-32">
-					<p className="text-base md:text-lg lg:text-xl my-8 max-w-4xl mx-auto leading-relaxed text-gray-200">
+				<div className="text-center text-white px-6 flex-1 flex flex-col justify-center md:mt-64 sm:mt-24">
+					<p className="text-base md:text-lg lg:text-xl my-22 md:my-8 max-w-4xl mx-auto leading-relaxed text-gray-200">
 						{description}
 					</p>
 
 					{/* Statistics */}
-					<div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-6">
-						<div className="flex items-center gap-2 text-sky-400">
+					<div className="flex flex-col sm:flex-row justify-center items-center font-bold gap-8 mb-8 md:mb-6">
+						<div className="flex items-center gap-2 rounded-full p-2 text-sky-400">
 							<div className="w-3 h-3 bg-sky-400 rounded-full"></div>
 							<span className="text-sm md:text-base font-medium">
 								{complianceIssues}
