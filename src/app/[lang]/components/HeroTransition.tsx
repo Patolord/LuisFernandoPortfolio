@@ -68,8 +68,8 @@ export const HeroTransition = ({
 					</h1>
 				</div>
 				l{/* Description and content in the middle */}
-				<div className="text-center text-white px-6 flex-1 flex flex-col justify-center md:mt-64 sm:mt-24">
-					<p className="text-base md:text-lg lg:text-xl my-12 md:my-8 max-w-4xl mx-auto leading-relaxed text-gray-200">
+				<div className="text-center text-white px-6 flex-1 flex flex-col justify-center md:mt-56 sm:mt-24">
+					<p className="text-base md:text-lg lg:text-xl my-10 md:my-8 max-w-4xl mx-auto leading-relaxed text-gray-200">
 						{description}
 					</p>
 
